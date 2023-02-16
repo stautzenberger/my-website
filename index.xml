@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sheikyon</title>
+    <link>https://sheikyon.me/</link>
+    <description>Recent content on Sheikyon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sheikyon.me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to the Technical/Historical Development of PGP</title>
+      <link>https://sheikyon.me/posts/introduction-to-the-technical-historical-development-of-pgp-from-1991-to-present-/</link>
+      <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://sheikyon.me/posts/introduction-to-the-technical-historical-development-of-pgp-from-1991-to-present-/</guid>
+      <description>&lt;p&gt;A brief introduction to the technical/historical development of PGP over the last few decades, from its creation in 1991 by cryptographer and computer scientist Philip “Phil” R. Zimmermann to the present decade, and how we can use it for our emails or instant messaging — this article will try to serve as an initiation for future articles on cryptography and encryption.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Genesis of the Prime Numbers Theorem</title>
+      <link>https://sheikyon.me/posts/the-genesis-of-the-prime-numbers-theorem/</link>
+      <pubDate>Sat, 24 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://sheikyon.me/posts/the-genesis-of-the-prime-numbers-theorem/</guid>
+      <description>&lt;p&gt;The brilliant Greek mathematician and geometer Euclid proved that the prime numbers are infinite. Since then, the question arose as to how we could know how many natural numbers less than or equal to a given natural number, let’s say $ x $ and represented as $ \pi\left( x \right) $, are prime. This problem has been in the focus of combinatorics and analysis for over a thousand years.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Untold Metaphysics of Money and State</title>
+      <link>https://sheikyon.me/posts/he-untold-metaphysics-of-money-and-state/</link>
+      <pubDate>Sat, 24 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://sheikyon.me/posts/he-untold-metaphysics-of-money-and-state/</guid>
+      <description>&lt;p&gt;That cryptocurrencies are a battle for independence from the fiat system or control of the citizenry through it should come as no surprise. Once the State assumed the helm of monetary affairs in the mid-18th century, the doors have been opened to one of the most hard-fought and divided battles: who should have the monopoly of money and credit.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>TikTok is Much Worse Than You Think</title>
+      <link>https://sheikyon.me/posts/tiktok-is-much-worse-than-you-think-/</link>
+      <pubDate>Fri, 11 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://sheikyon.me/posts/tiktok-is-much-worse-than-you-think-/</guid>
+      <description>&lt;p&gt;I’ll try, with this article, to make people aware of the implications that the enormous growth of TikTok is having on the privacy of millions of users and how it is being used as a kind of “weapon” against the West to stupefy an entire generation of young people.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>On the Futility of Debate</title>
+      <link>https://sheikyon.me/notes/on-the-futility-of-debate/</link>
+      <pubDate>Wed, 29 Jun 2022 23:34:50 +0000</pubDate>
+      
+      <guid>https://sheikyon.me/notes/on-the-futility-of-debate/</guid>
+      <description>Idealism aside, in general we debate not to change our ideas but to reinforce our convictions. The most sensible thing, in this sense, is to assume that the opponent is not someone who is interested in adopting one’s ideas. Whoever enters the battlefield wanting to fall before the other is because he is either suicidal or an imbecile. There is something noble, our democratic culture tells us, in the exchange of ideas and dialogue between those who think differently.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://sheikyon.me/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sheikyon.me/about/</guid>
+      <description>Introduction ― me and this site Hi, I’m Sheikyon! Welcome to sheikyon.me, I’m a full-stack developer (software developer) enthusiastic about theoretical computing, programming, electronics and free and open-source software. In addition to everything that is even slightly close to computers, I also have a deep interest in mathematics, economics, philosophy, sociology, history, and anime. If you take a closer look at this space, you’ll realize that these are the main topics that are usually addressed very regularly in my articles/posts on my website.</description>
+    </item>
+    
+  </channel>
+</rss>
