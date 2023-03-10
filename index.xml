@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sheikyon</title>
+    <link>https://www.sheikyon.me/</link>
+    <description>Recent content on Sheikyon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.sheikyon.me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to the Technical/Historical Development of PGP</title>
+      <link>https://www.sheikyon.me/introduction-to-the-technical/historical-development-of-pgp/</link>
+      <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.sheikyon.me/introduction-to-the-technical/historical-development-of-pgp/</guid>
+      <description>&lt;p&gt;A brief introduction to the technical/historical development of PGP over the last few decades, from its creation in 1991 by cryptographer and computer scientist Philip “Phil” R. Zimmermann to the present decade, and how we can use it for our emails or instant messaging — this article will try to serve as an initiation for future articles.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Untold Metaphysics of Money and State</title>
+      <link>https://www.sheikyon.me/the-untold-metaphysics-of-money-and-state/</link>
+      <pubDate>Sat, 24 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.sheikyon.me/the-untold-metaphysics-of-money-and-state/</guid>
+      <description>&lt;p&gt;That cryptocurrencies are a battle for independence from the fiat system or control of the citizenry through it should come as no surprise. Once the State assumed the helm of monetary affairs in the mid-18th century, the doors have been opened to one of the most hard-fought and divided battles: who should have the monopoly of money and credit.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Genesis of the Prime Numbers Theorem</title>
+      <link>https://www.sheikyon.me/the-genesis-of-the-prime-numbers-theorem/</link>
+      <pubDate>Sat, 17 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.sheikyon.me/the-genesis-of-the-prime-numbers-theorem/</guid>
+      <description>&lt;p&gt;The brilliant Greek mathematician and geometer Euclid proved that the prime numbers are infinite. Since then, the question arose as to how we could know how many natural numbers less than or equal to a given natural number, let’s say $ x $ and represented as $ \pi\left( x \right) $, are prime. This problem has been in the focus of combinatorics and analysis for over a thousand years.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>TikTok is Much Worse Than You Think</title>
+      <link>https://www.sheikyon.me/tiktok-is-much-worse-than-you-think/</link>
+      <pubDate>Fri, 11 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.sheikyon.me/tiktok-is-much-worse-than-you-think/</guid>
+      <description>&lt;p&gt;I’ll try, with this article, to make people aware of the implications that the enormous growth of TikTok is having on the privacy of millions of users and how it is being used as a kind of “weapon” against the West to stupefy an entire generation of young people.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>24 Sites to Generate CSS Pattern Background</title>
+      <link>https://www.sheikyon.me/microblog/24-sites-to-generate-css-pattern-background/</link>
+      <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.sheikyon.me/microblog/24-sites-to-generate-css-pattern-background/</guid>
+      <description>Here is an extensive list of 25 sites that will help you generate static backgrounds for your website.
+SVG Backgrounds Hero Patterns Philiprogers: SVGPatterns The Pattern Library Plain Pattern Patternico Paaatterns Cool Backgrounds Btmills: Geopattern Bgjar Svgeez Patternpad Tartanify Big Siteorigin Tabbied Pattern Monster Visiwig Pattern Ninja CSS Background Patterns Patternify Animated CSS Background CSS Stripes Generator Patternizer Doodad: Pattern Generator </description>
+    </item>
+    
+    <item>
+      <title>On the Futility of Debate</title>
+      <link>https://www.sheikyon.me/microblog/on-the-futility-of-debate/</link>
+      <pubDate>Wed, 29 Jun 2022 23:34:50 +0000</pubDate>
+      
+      <guid>https://www.sheikyon.me/microblog/on-the-futility-of-debate/</guid>
+      <description>Idealism aside, in general we debate not to change our ideas but to reinforce our convictions. The most sensible thing, in this sense, is to assume that the opponent is not someone who is interested in adopting one’s ideas. Whoever enters the battlefield wanting to fall before the other is because he is either suicidal or an imbecile. There is something noble, our democratic culture tells us, in the exchange of ideas and dialogue between those who think differently. It may be true for many, but clearly not for me. Debating, especially on the internet, consumes time and yields very few benefits.
+There is the possibility of disenchantment of one’s own ideas. If that is the case, there are better ways to reassess ideologies: books or this blog, for example. Let’s think about a valuable concept that economic science has left us: the division of labor. Different people fulfill different roles in society.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://www.sheikyon.me/about/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.sheikyon.me/about/</guid>
+      <description>Welcome to my site! — an introduction Hi, I’m Sheikyon! Welcome to sheikyon.me, I’m a full-stack developer (software developer) enthusiastic about computing, programming, electronics and free and open-source software. In addition to everything that is even slightly close to computers, I also have a deep interest in mathematics, economics, philosophy, sociology, history, and anime. If you take a closer look at this space, you’ll realize that these are the main topics that are usually addressed very regularly in my articles/posts on my website.
+I maintain this website to disclose things that are significant to me and important to common knowledge. In general, my articles tend to be detailed in terms of content and in some cases they can be considerably long — I care about the logic and semantic consistency behind his prose, so I always try to correct any inconsistencies that may lead to misunderstandings or undesirable errors. My articles are usually long and the topic on which they revolve is linked to my personal hobbies, such as those already mentioned above.</description>
+    </item>
+    
+  </channel>
+</rss>

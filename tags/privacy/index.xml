@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>privacy on Sheikyon</title>
+    <link>https://www.sheikyon.me/tags/privacy/</link>
+    <description>Recent content in privacy on Sheikyon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.sheikyon.me/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to the Technical/Historical Development of PGP</title>
+      <link>https://www.sheikyon.me/introduction-to-the-technical/historical-development-of-pgp/</link>
+      <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.sheikyon.me/introduction-to-the-technical/historical-development-of-pgp/</guid>
+      <description>&lt;p&gt;A brief introduction to the technical/historical development of PGP over the last few decades, from its creation in 1991 by cryptographer and computer scientist Philip “Phil” R. Zimmermann to the present decade, and how we can use it for our emails or instant messaging — this article will try to serve as an initiation for future articles.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>TikTok is Much Worse Than You Think</title>
+      <link>https://www.sheikyon.me/tiktok-is-much-worse-than-you-think/</link>
+      <pubDate>Fri, 11 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.sheikyon.me/tiktok-is-much-worse-than-you-think/</guid>
+      <description>&lt;p&gt;I’ll try, with this article, to make people aware of the implications that the enormous growth of TikTok is having on the privacy of millions of users and how it is being used as a kind of “weapon” against the West to stupefy an entire generation of young people.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>riemann on Sheikyon</title>
+    <link>https://www.sheikyon.me/tags/riemann/</link>
+    <description>Recent content in riemann on Sheikyon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.sheikyon.me/tags/riemann/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Genesis of the Prime Numbers Theorem</title>
+      <link>https://www.sheikyon.me/the-genesis-of-the-prime-numbers-theorem/</link>
+      <pubDate>Sat, 17 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.sheikyon.me/the-genesis-of-the-prime-numbers-theorem/</guid>
+      <description>&lt;p&gt;The brilliant Greek mathematician and geometer Euclid proved that the prime numbers are infinite. Since then, the question arose as to how we could know how many natural numbers less than or equal to a given natural number, let’s say $ x $ and represented as $ \pi\left( x \right) $, are prime. This problem has been in the focus of combinatorics and analysis for over a thousand years.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
