@@ -1,0 +1,81 @@
+==================================================================
+https://keybase.io/sheikyon
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://sheikyon.me
+  * I am sheikyon (https://keybase.io/sheikyon) on keybase.
+  * I have a public key with fingerprint 5F8B CAC9 548A CBDE 9680  05B5 7376 1C66 C09C 24B3
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01012c4ee6e0e5f7db0881b4a6830e253fb23bcc5d959ae1432dad774676fa42aab70a",
+      "fingerprint": "5f8bcac9548acbde968005b573761c66c09c24b3",
+      "host": "keybase.io",
+      "key_id": "73761c66c09c24b3",
+      "kid": "01012c4ee6e0e5f7db0881b4a6830e253fb23bcc5d959ae1432dad774676fa42aab70a",
+      "uid": "7b398a74101ce2b1bf9b585b320dca19",
+      "username": "sheikyon"
+    },
+    "merkle_root": {
+      "ctime": 1678480587,
+      "hash_meta": "fa82270f0344688b619aff630edcbbc55e223443fbd4cb35f41dc8bd40e06225",
+      "seqno": 24177680
+    },
+    "revoke": {
+      "sig_ids": [
+        "aa6f4ca8dab3db2556a6de5a96da666af69141f69fddf124dd8bd19425e2e8a50f"
+      ]
+    },
+    "service": {
+      "hostname": "sheikyon.me",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1678480606,
+  "expire_in": 157680000,
+  "prev": "77031ce3b7048b6e73b677a22954699725a6f367a655e0052bc2d7c7e6a8bda0",
+  "seqno": 17,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMK0AnicrVNbaB1VFL1JqzZJfdTWnxQfHdGvNDlz5jxmbmv8aVAkiT+mH314OY99
+boZ7c+c6M7lNDBdB8YVQQYt+lISKRoNCa8W2qDRqqCJUYqBS0KaltLTaB9K0RUII
+1jNREcVP52OGPWftvddae58jty7LNTecu2emOPrh5FDD0anaYE637Do14shIDzv5
+EacESx8oa0jSQinUTt5BLnKxIgAMEFDDtUS+70oimO8hwNQzEntSKaoDGghwiYe1
+0JwTxpkRBAshORJOm2PCShHiahxWUluWGl8qoQJKfKGkhoD5CFFJuceZqxhTKFCY
+SM8m9kdJlmHJSZFAexjZfzYoLNH7D/z/zHvwjz7SC3zBia2qAEtXmkBSn0oPI62E
+G2TABOKKGACLTvohLA1HFafe5gxAXCpDIY6iNDNXpWEGcRn3iY+oz61AkfQXBiAV
+NtMIH2OODPIIYb4vmRsIY5ilrJWUilLA2B5Z9poo6VFDXK18GyBADGNqeSTwVCVy
+8pi4nFtXLYUYalEJsu5JWLS+JU5+qyMEM0QJXwvpaYkpZYJpoCJgWjDGhGGBS1z7
+NlobFxOtbRs3INhSAF9QZJzt9axbXAvVUvFsUP8yoN1GbU41jtJIRWV70J+m1SSf
++ZIOVzPkDpCFP2sUZFjRdktsRg3iJLT+5V2L/KdlDLE2B4aqYQyFMEPQTKV9sj5Q
+y2bFkWen5NkBEusgcE8yzgXGdttYEHBMrXSPccGsnXbrsFRYc8WBCStRoL89dO10
+UlHMBIXFikgHY3DqU19sW55raM7dfFNjdn1yzU13/HWpTqIVuTe6JhdXN3Y/8cnE
+YseLa/aM7n67qf7+Q+/OpodX64merlOdb7ItPxydvnH/l89/P9odLCx/WMXfbLhb
+nVy/7vHp1/Kvz3909szXC5+fOLjzsQeOHCi1w3jrIz//dnzV2h9/1Rf3rB/bPPsT
+vNxbHluc+azHJLtQ58Qt367bHLz3y/79Ky+nL1S/u0IPzF9q/LjjWMc07b02NAKr
+nL31q32865W+8x3Ha4fn6uVNK8a2HZqSA+Kduzqf2XeM4ZbgrRvJxkLrzNzu69cq
+K2/7tPvCvX0b0fWrl+8bP33nQsvsiS07x7efized+WrtJd46tmP+uSdfNS/NBU8v
+zj3ac2gvaZo0tz/47Ae9yYbfAZ+eiHM=
+=AFSV
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/sheikyon
+
+==================================================================
