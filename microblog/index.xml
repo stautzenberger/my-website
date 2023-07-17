@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Microblog on Sheikyon</title>
+    <link>https://www.sheikyon.me/microblog/</link>
+    <description>Recent content in Microblog on Sheikyon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.sheikyon.me/microblog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Importance of Programming in Pure Mathematics</title>
+      <link>https://www.sheikyon.me/microblog/-the-importance-of-programming-in-pure-mathematics/</link>
+      <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.sheikyon.me/microblog/-the-importance-of-programming-in-pure-mathematics/</guid>
+      <description>Regarding the publication that Marcelinka (u/visxme) posted in which he asked if a minimum or advanced knowledge of physics and programming was necessary to study &amp;ldquo;pure theoretical mathematics&amp;rdquo;, I decided to write this to clarify a little more why it is so important to move in a minimally efficient way with programming if you are going to dedicate yourself to mathematics, regardless of whether these are &amp;ldquo;theoretical&amp;rdquo; or &amp;ldquo;practical&amp;rdquo;. It should be noted that with this I am not forcing any mathematician in training to enter programming professionally, but I am motivating him to learn the basics of it.
+My answer to that question was:
+The interaction between mathematics and physics in recent years has intensified thanks to the invention of string theory, so yes, some physics will be important but not absolutely necessary.
+I see that you&amp;rsquo;re counterposing the practical point of view with the theoretical - theoretical mathematics does not require programming, however, if at any time you need to go to a computer-assisted proof, that is, mathematically corroborate a result using a computer, perhaps moving with a programming language such as Python or MATLAB (for data analysis or model design) will be useful.</description>
+    </item>
+    
+    <item>
+      <title>The Programmer as an Applied Linguist</title>
+      <link>https://www.sheikyon.me/microblog/the-programmer-as-a-linguist/</link>
+      <pubDate>Thu, 05 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.sheikyon.me/microblog/the-programmer-as-a-linguist/</guid>
+      <description>It&amp;rsquo;ll not be a secret to anyone that both programming and mathematics have a tremendously elementary link, we could focus on asserting that, in fact, programs are mathematical demonstrations per se. This link is known as Curry-Howard correspondence, and it establishes the above through the existing isomorphism between formal type systems for certain computational models and certain formal proof systems.
+Beyond the technical postulates on which the aforementioned correspondence rests and, ultimately, the flagrant relationship that mathematics has with programming. It&amp;rsquo;d be convenient to portray—if you haven&amp;rsquo;t noticed it yet—the enormous correspondence that emerges, and which deals with the relationship between linguistics and programming, since in both areas the study of the fundamental structures of language, its variations across all language families—which it also identifies and classifies—and the conditions that make understanding and communication possible through natural language is central.
+In recent years it has become a common practice among computational linguists to analyze languages using computers.</description>
+    </item>
+    
+    <item>
+      <title>24 Sites to Generate CSS Pattern Background</title>
+      <link>https://www.sheikyon.me/microblog/24-sites-to-generate-css-pattern-background/</link>
+      <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.sheikyon.me/microblog/24-sites-to-generate-css-pattern-background/</guid>
+      <description>Here is an extensive list of 25 sites that will help you generate static backgrounds for your website.
+SVG Backgrounds Hero Patterns Philiprogers: SVGPatterns The Pattern Library Plain Pattern Patternico Paaatterns Cool Backgrounds Btmills: Geopattern Bgjar Svgeez Patternpad Tartanify Big Siteorigin Tabbied Pattern Monster Visiwig Pattern Ninja CSS Background Patterns Patternify Animated CSS Background CSS Stripes Generator Patternizer Doodad: Pattern Generator </description>
+    </item>
+    
+    <item>
+      <title>On the Futility of Debate</title>
+      <link>https://www.sheikyon.me/microblog/on-the-futility-of-debate/</link>
+      <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.sheikyon.me/microblog/on-the-futility-of-debate/</guid>
+      <description>Four years ago, to be precise, on April 19, 2019, a captivating debate took place at Meridian Hall in Toronto, Canada between Canadian psychologist and political scientist Jordan Peterson—who, by the way, is a staunch critic of Marxism and &amp;ldquo;identity politics&amp;rdquo;—and the Slovenian philosopher and cultural critic Slavoj Žižek—a communist in his own way and a Hegelian—on the relationship between Marxism, capitalism, and happiness. Both, despite the endless ideological disagreements they must have, found points in common regarding political correctness or &amp;ldquo;woke capitalism&amp;rdquo; and economic regulation within the capitalist system, as well as disagreements that I will not descend to analyze.
+That pathetic debate served as an example both for me and for, I think, people who think like me how we can distance ourselves from a subject that we presupposed to be minimally educated and side with his ideological counterpart, in this case Žižek. I firmly believe that, in order to criticize an author, we should carefully read his work so as not to create straw men and engage in circular reasoning, as was the case with Peterson who thought that the opponent he was facing was nothing more than a bland charlatan like the ones he used to face in television talk shows where feminism, queer theory and the tiring postmodernism that prevails in Western society were discussed.</description>
+    </item>
+    
+  </channel>
+</rss>

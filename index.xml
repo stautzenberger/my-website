@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Sheikyon</title>
+    <link>https://www.sheikyon.me/</link>
+    <description>Recent content in Home on Sheikyon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 14 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.sheikyon.me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Importance of Programming in Pure Mathematics</title>
+      <link>https://www.sheikyon.me/microblog/-the-importance-of-programming-in-pure-mathematics/</link>
+      <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.sheikyon.me/microblog/-the-importance-of-programming-in-pure-mathematics/</guid>
+      <description>Regarding the publication that Marcelinka (u/visxme) posted in which he asked if a minimum or advanced knowledge of physics and programming was necessary to study &amp;ldquo;pure theoretical mathematics&amp;rdquo;, I decided to write this to clarify a little more why it is so important to move in a minimally efficient way with programming if you are going to dedicate yourself to mathematics, regardless of whether these are &amp;ldquo;theoretical&amp;rdquo; or &amp;ldquo;practical&amp;rdquo;. It should be noted that with this I am not forcing any mathematician in training to enter programming professionally, but I am motivating him to learn the basics of it.
+My answer to that question was:
+The interaction between mathematics and physics in recent years has intensified thanks to the invention of string theory, so yes, some physics will be important but not absolutely necessary.
+I see that you&amp;rsquo;re counterposing the practical point of view with the theoretical - theoretical mathematics does not require programming, however, if at any time you need to go to a computer-assisted proof, that is, mathematically corroborate a result using a computer, perhaps moving with a programming language such as Python or MATLAB (for data analysis or model design) will be useful.</description>
+    </item>
+    
+    <item>
+      <title>The Orthodox Fetishism for Econometrics</title>
+      <link>https://www.sheikyon.me/the-orthodox-fetishism-for-econometrics/</link>
+      <pubDate>Tue, 10 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.sheikyon.me/the-orthodox-fetishism-for-econometrics/</guid>
+      <description>&lt;p&gt;Mathematics will frighten more than one who has recently been introduced to economics through some introductory course for students. Very ornate formulas and equations — with which it is often intended to banally circumscribe human behavior to only numbers — that will make a reading convoluted that was initially conceived as brilliantly simple and intuitive.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Programmer as an Applied Linguist</title>
+      <link>https://www.sheikyon.me/microblog/the-programmer-as-a-linguist/</link>
+      <pubDate>Thu, 05 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.sheikyon.me/microblog/the-programmer-as-a-linguist/</guid>
+      <description>It&amp;rsquo;ll not be a secret to anyone that both programming and mathematics have a tremendously elementary link, we could focus on asserting that, in fact, programs are mathematical demonstrations per se. This link is known as Curry-Howard correspondence, and it establishes the above through the existing isomorphism between formal type systems for certain computational models and certain formal proof systems.
+Beyond the technical postulates on which the aforementioned correspondence rests and, ultimately, the flagrant relationship that mathematics has with programming. It&amp;rsquo;d be convenient to portray—if you haven&amp;rsquo;t noticed it yet—the enormous correspondence that emerges, and which deals with the relationship between linguistics and programming, since in both areas the study of the fundamental structures of language, its variations across all language families—which it also identifies and classifies—and the conditions that make understanding and communication possible through natural language is central.
+In recent years it has become a common practice among computational linguists to analyze languages using computers.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to the Technical/Historical Development of PGP</title>
+      <link>https://www.sheikyon.me/introduction-to-the-technical/historical-development-of-pgp/</link>
+      <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.sheikyon.me/introduction-to-the-technical/historical-development-of-pgp/</guid>
+      <description>&lt;p&gt;A brief introduction to the technical/historical development of PGP over the last few decades, from its creation in 1991 by cryptographer and computer scientist Philip “Phil” R. Zimmermann to the present decade, and how we can use it for our emails or instant messaging — this article will try to serve as an initiation for future articles.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Untold Metaphysics of Money and State</title>
+      <link>https://www.sheikyon.me/the-untold-metaphysics-of-money-and-state/</link>
+      <pubDate>Sat, 24 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.sheikyon.me/the-untold-metaphysics-of-money-and-state/</guid>
+      <description>&lt;p&gt;That cryptocurrencies are a battle for independence from the fiat system or control of the citizenry through it should come as no surprise. Once the State assumed the helm of monetary affairs in the mid-18th century, the doors have been opened to one of the most hard-fought and divided battles: who should have the monopoly of money and credit.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Genesis of the Prime Numbers Theorem</title>
+      <link>https://www.sheikyon.me/the-genesis-of-the-prime-numbers-theorem/</link>
+      <pubDate>Sat, 17 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.sheikyon.me/the-genesis-of-the-prime-numbers-theorem/</guid>
+      <description>&lt;p&gt;The brilliant Greek mathematician and geometer Euclid proved that the prime numbers are infinite. Since then, the question arose as to how we could know how many natural numbers less than or equal to a given natural number, let’s say $ x $ and represented as $ \pi\left( x \right) $, are prime. This problem has been in the focus of combinatorics and analysis for over a thousand years.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>TikTok is Much Worse Than You Think</title>
+      <link>https://www.sheikyon.me/tiktok-is-much-worse-than-you-think/</link>
+      <pubDate>Fri, 11 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.sheikyon.me/tiktok-is-much-worse-than-you-think/</guid>
+      <description>&lt;p&gt;I’ll try, with this article, to make people aware of the implications that the enormous growth of TikTok is having on the privacy of millions of users and how it is being used as a kind of “weapon” against the West to stupefy an entire generation of young people.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>24 Sites to Generate CSS Pattern Background</title>
+      <link>https://www.sheikyon.me/microblog/24-sites-to-generate-css-pattern-background/</link>
+      <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.sheikyon.me/microblog/24-sites-to-generate-css-pattern-background/</guid>
+      <description>Here is an extensive list of 25 sites that will help you generate static backgrounds for your website.
+SVG Backgrounds Hero Patterns Philiprogers: SVGPatterns The Pattern Library Plain Pattern Patternico Paaatterns Cool Backgrounds Btmills: Geopattern Bgjar Svgeez Patternpad Tartanify Big Siteorigin Tabbied Pattern Monster Visiwig Pattern Ninja CSS Background Patterns Patternify Animated CSS Background CSS Stripes Generator Patternizer Doodad: Pattern Generator </description>
+    </item>
+    
+    <item>
+      <title>On the Futility of Debate</title>
+      <link>https://www.sheikyon.me/microblog/on-the-futility-of-debate/</link>
+      <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.sheikyon.me/microblog/on-the-futility-of-debate/</guid>
+      <description>Four years ago, to be precise, on April 19, 2019, a captivating debate took place at Meridian Hall in Toronto, Canada between Canadian psychologist and political scientist Jordan Peterson—who, by the way, is a staunch critic of Marxism and &amp;ldquo;identity politics&amp;rdquo;—and the Slovenian philosopher and cultural critic Slavoj Žižek—a communist in his own way and a Hegelian—on the relationship between Marxism, capitalism, and happiness. Both, despite the endless ideological disagreements they must have, found points in common regarding political correctness or &amp;ldquo;woke capitalism&amp;rdquo; and economic regulation within the capitalist system, as well as disagreements that I will not descend to analyze.
+That pathetic debate served as an example both for me and for, I think, people who think like me how we can distance ourselves from a subject that we presupposed to be minimally educated and side with his ideological counterpart, in this case Žižek. I firmly believe that, in order to criticize an author, we should carefully read his work so as not to create straw men and engage in circular reasoning, as was the case with Peterson who thought that the opponent he was facing was nothing more than a bland charlatan like the ones he used to face in television talk shows where feminism, queer theory and the tiring postmodernism that prevails in Western society were discussed.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://www.sheikyon.me/about/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.sheikyon.me/about/</guid>
+      <description>Welcome to my site! — an introduction Hi, I’m Sheikyon! Welcome to sheikyon.me, I’m a full-stack developer (software developer) enthusiastic about computing, programming, electronics and free and open-source software. In addition to everything that is even slightly close to computers, I also have a deep interest in mathematics, economics, philosophy, sociology, history, and anime. If you take a closer look at this space, you’ll realize that these are the main topics that are usually addressed very regularly in my articles/posts on my website.
+I maintain this website to disclose things that are significant to me and important to common knowledge. In general, my articles tend to be detailed in terms of content and in some cases they can be considerably long — I care about the logic and semantic consistency behind his prose, so I always try to correct any inconsistencies that may lead to misunderstandings or undesirable errors. My articles are usually long and the topic on which they revolve is linked to my personal hobbies, such as those already mentioned above.</description>
+    </item>
+    
+  </channel>
+</rss>

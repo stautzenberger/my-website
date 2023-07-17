@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Hi, I’m Sheikyon! Welcome to sheikyon.me, I’m a full-stack developer (software developer) enthusiastic about computing, programming, electronics and free and open-source software. In addition to everything that is even slightly close to computers, I also have a deep interest in mathematics, economics, philosophy, sociology, history, and anime. If you take a closer look at this space, you’ll realize that these are the main topics that are usually addressed very regularly in my articles/posts on my website.">
+    <meta name="keywords" content="Computer science, mathematics, economics, and philosophy.">
+    <meta name="author" content="Sheikyon">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+    <title>The Genesis of the Prime Numbers Theorem - Sheikyon </title>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    
+    
+    <link rel="stylesheet" href="/css/site.min.css">
+    
+    <meta property="og:title" content="The Genesis of the Prime Numbers Theorem" />
+<meta property="og:description" content="The brilliant Greek mathematician and geometer Euclid proved that the prime numbers are infinite. Since then, the question arose as to how we could know how many natural numbers less than or equal to a given natural number, let’s say $ x $ and represented as $ \pi\left( x \right) $, are prime. This problem has been in the focus of combinatorics and analysis for over a thousand years." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.sheikyon.me/the-genesis-of-the-prime-numbers-theorem/" /><meta property="article:section" content="articles" />
+<meta property="article:published_time" content="2022-12-17T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-12-17T00:00:00+00:00" />
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="The Genesis of the Prime Numbers Theorem"/>
+<meta name="twitter:description" content="The brilliant Greek mathematician and geometer Euclid proved that the prime numbers are infinite. Since then, the question arose as to how we could know how many natural numbers less than or equal to a given natural number, let’s say $ x $ and represented as $ \pi\left( x \right) $, are prime. This problem has been in the focus of combinatorics and analysis for over a thousand years."/>
+
+</head>
+
+    <body class="two-column">
+        <a href="#content">Skip to content</a>
+<link rel="alternate" type="application/rss+xml" href="https://www.sheikyon.me//index.xml" title="Sheikyon">
+    <header role="banner" class="banner widgets columns-1">
+        <div class="site-logo">
+        <a href="/" rel="home">
+            <p></p>
+        </a>
+        <h1 class="site">Sheikyon</h1>
+        <nav>
+            
+              
+                
+                <a href="/"><b>Home</b></a>
+              
+                  
+                <a href="/about/"><b>About/Contact</b></a>
+              
+                  
+                <a href="/articles/"><b>Articles</b></a>
+              
+                  
+                <a href="/microblog/"><b>Microblog</b></a>
+              
+            
+          </nav>
+    </header>
+
+    <div class="wrapper">
+
+    <br>
+    <div style="width: 100%; max-height: 100px; text-align: center;">
+       
+</div>
+
+    <div class="breadcrumbs">
+        
+    </div>
+        <div id="content" class="content">
+<main role="main">
+  <article role="article" class="post type-post format-standard hentry">
+      <header class="post-header">
+          <h1 class="post-title">The Genesis of the Prime Numbers Theorem</h1>
+          <div class="post-details">
+          </div>
+      </header>
+<div class="post-content">
+    <p>The brilliant Greek mathematician and geometer Euclid proved that the prime numbers are infinite. Since then, the question arose as to how we could know how many natural numbers less than or equal to a given natural number, let’s say $ x $ and represented as $ \pi\left( x \right) $, are prime. This problem has been in the focus of combinatorics and analysis for over a thousand years.</p>
+<hr>
+<h1 id="why-do-we-care-about-this">Why do we care about this?</h1>
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+    <figure class="">
+      <img class="" src="/res/qNm7t.jpg">
+      <figcaption class="">Prime numbers from 1 to 100,000.</figcaption>
+    </figure>
+  
+
+
+<p>For thousands of years, until today, in mathematics a strong attention has been paid to some very particular numbers: the prime numbers. They have been defined as indivisible whole numbers, that is, larger whole numbers that are only divisible by themselves or by unity. Its origin has been, is and, perhaps, will be uncertain. Even more mysterious has been knowing how, with a mathematical algorithm, we could count how many prime numbers there are up to a given range or limit.</p>
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+  
+
+  
+    
+      
+      
+    
+
+    <figure class="figure-right">
+      <p>
+        <img class="img-right" src="/res/257px-Euklid2.jpg">
+        <figcaption class="caption-right">The Greek geometer, logician and prominent mathematician Euclid (XXX-XXX)</figcaption>
+      </p>
+    </figure>
+  
+
+
+<p>All of us, or almost all of us, are aware that in mathematics there are various types of numbers: from even to complex. David Wells, an American mathematician, would call the following “good arithmetic order”, referring to how even numbers always alternate with odd numbers, multiples of 3 always appear every three numbers, perfect squares follow a formation law that is easy to determine, and in this way we could make a long list of numbers that do what is expected of them, no matter how big they are or where they are located. Prime numbers, however, are a real nuisance, showing up in unlikely places and not strictly adhering to any rules.</p>
+<p>Euclid, a prominent Greek geometer, mathematician, and logician, founder of Euclidean geometry, and perhaps the creator of mathematical rigor, demonstrated over a thousand years ago through simple and intuitive — but contradictory — reasoning, that the number of prime numbers is infinite. Since then, not even outstanding mathematicians such as Euler, Gauss, Riemann, or Ramanujan have managed to build alive an algorithm that allows the number of prime numbers to be computed taking a given interval as input — mathematicians are reluctant to admit the possibility that there is no explanation of how nature chooses the prime numbers. If mathematics did not have a structure, if it did not possess a marvelous simplicity, it would not be worth studying.</p>
+<blockquote>
+<p>Suppose $ p_1, p_2, \ldots p_n $ represent the first $ n $ prime numbers: $ p_1 = 2, p_2 = 3, p_3 = 5 $, so there is at least one more prime. Take $ p_1 $ for example. Obviously $ p_1 | (p_1 \cdot p_2 \cdot p_3 \cdots p_n), $ so if $ p_1 | m $, then $ p_1 | (m - p_1 \cdot p_2 \cdot p_3 \cdots p_n) $. That is, $ p_1 | 1 $ and therefore $ p_1 = 1 $, which is not a prime number. It follows that $ p_1 $ cannot divide $ m $ and similarly none of the $ p_j $, can divide $ m $, all of whose prime divisors must therefore be other than $ p_1, p_2, \cdots p_n. $</p>
+</blockquote>
+<p>This proof assumes that every natural number has at least one prime divisor, but this can be filled in. Note that —despite a promising start—, $ m = p_1 \cdot p_2 \cdot p_3 \cdots p_n + 1 $ is not necessarily prime itself, it just has a prime factor other than $ p_1, p_2, \ldots p_n $:</p>
+<p>$$ 2 + 1 = 3 $$
+$$ 2 ⋅ 3 + 1 = 7 $$
+$$ 2 ⋅ 3 ⋅ 5 + 1 = 31 $$
+$$ 2 ⋅ 3 ⋅ 5 ⋅ 7 + 1 = 211 $$
+$$ 2 ⋅ 3 ⋅ 5 ⋅ 7 ⋅ 11 + 1 = 2311 $$
+$$ 2 ⋅ 3 ⋅ 5 ⋅ 7 ⋅ 11 ⋅ 13 + 1 = 30031 = 59 ⋅ 509 $$</p>
+<p>The first five values of $ m $ here actually are prime, but the last one is not, its factorization producing two new primes beyond 2, 3, 5, 7, 11, 13 — namely, 59 and 509.</p>
+<p>This series of difficulties related to assembling a mathematical algorithm with the ability to compute the number of prime numbers taking an interval as a starting point made it possible to achieve innovative algorithms, some seeking to sharpen an existing one and others totally new. It is convenient to specify, in order to avoid misunderstandings, that there are efficient methods to generate prime numbers. The oldest and most effective of which we have knowledge is the sieve of Eratosthenes, sculpted by the mathematician and librarian of Alexandria Eratosthenes, which allows finding all prime numbers less than a given natural number (for example, finding all prime numbers less than 100).</p>
+<h3 id="approximation-of--pileft-x-right--by-legendre">Approximation of $ \pi\left( x \right) $ by Legendre</h3>
+<p>Adrien-Marie Legendre was a French mathematician, who would be described by Marcus du Sautoy as having the “round plump face of a conceited-looking gentleman”. Legendre came from a wealthy family and, at a very young age, showed a devotion to mathematics — one of the discoveries he claimed credit for was the one that made a strong link between logarithms and prime numbers. The Frenchman also claimed to have been, before Gauss, the first to discover the elliptical motion of Ceres. This paved the way for a hilarious debate, in which both mathematicians would seek to prove the superiority of their logarithmic functions for numbering prime numbers. Not surprisingly, Gauss at one point sent a letter to his fellow astronomer Schumacher on July 30, 1806 in which he stated: “It seems as if I were destined to coincide with Legendre in almost all my theoretical works”.</p>
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+  
+
+  
+    
+      
+      
+    
+
+    <figure class="figure-right">
+      <p>
+        <img class="img-right" src="/res/48-Legendre-V.jpg">
+        <figcaption class="caption-right">Draw of the French mathematician Adrien-Marie Legendre (1752-1833)</figcaption>
+      </p>
+    </figure>
+  
+
+
+<p>We could agree, at this point, that Sautoy was right to describe Legendre as “conceited” and, if we want to go further, as a pretentious man who sought to attribute to his name mathematical contributions that had not been conceived by him. Legendre observed—as did many before him—that the density of prime numbers within the stream of integers oscillates wildly and seemingly without pattern. There are fourteen primes between 500 and 600, for example, with 521 being prime, 522 non-prime (composite), 523 prime, followed by 17 composites followed before the next prime at 541. There are 25 primes between 1 and 100, and the primes look like decrease on average as one moves towards higher values.</p>
+<p>A good portion of his research on the properties of prime numbers was captured in his little-discussed mathematical treatise <a href="http://samfaitdesmaths.free.fr/documents/maths/Legendre1.pdf">Théorie des nombres</a>, which he published in 1808 and that, later, would serve as an incentive for Riemann to meticulously investigate the particularities that prime numbers have.</p>
+<p>$$ \pi(600) - \pi(500) = 14 $$ $$ \pi(540) - \pi(523) = 0 $$ $$ \pi(100) = 25 $$</p>
+<p>Legendre speculated based on a careful examination of the main tables available to him in 1808 that:</p>
+<p>$$ \pi(x) \approx \text{ leg}(x) := { x \over {\log(x) - 1.08366}} $$</p>
+<p>Here $ \approx $ means “is approximately or equal to” and where where $ \log(x) $ is the natural logarithm of $ x $, that is, the power of e that $ x $ is.</p>
+<p>$$ \pi(100) \approx \frac{100}{\log(100) - 1.08366} = \frac{100}{4.60517 - 1.08366} = \frac{100}{3.52151} = 28.40 $$</p>
+<p>This differs from the actual value of $ \pi(100) = 25 $ by a relative error of 13%, which isn’t too bad, but isn’t particularly impressive either. In fact the match is uncannily good over the first million integers when approximating $ \pi(x) $ by $ \text{ Leg}(x) = \text{ round(leg}(x)) $ where round() rounds to the nearest integer.</p>
+<h3 id="approximation-of--pileft-x-right--by-gausss-integral-logarithm">Approximation of $ \pi\left( x \right) $ by Gauss’s integral logarithm</h3>
+<p>Carl Friedrich Gauss was born on April 20, 1777 (a prime year!), at the age of three he was correcting his father’s accounts—according to what he said, he learned to count before he spoke—and at nineteen, his discovery of a magnificent geometric construction of a 17-sided figure convinced him that he should dedicate his life to mathematics. Before him, the ancient Greeks had shown that it was possible to build a perfect pentagon using only a straightedge and compass. Since then no one had been able to show how to use these simple tools to construct other perfect polygons, called regular polygons, with a prime number of sides.</p>
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+  
+
+  
+    
+      
+      
+    
+
+    <figure class="figure-right">
+      <p>
+        <img class="img-right" src="/res/carl-friedrich-gauss.jpg">
+        <figcaption class="caption-right">German mathematician, astronomer and physicist Carl Friedrich Gauss (1777-1855) in 1840</figcaption>
+      </p>
+    </figure>
+  
+
+
+<p>Gauss’s excitement when he discovered the way to construct that perfect 17-sided figure prompted him to start a mathematical journal which he kept for the next eighteen years. This diary, which remained in the hands of his family until 1898, became one of the most important documents in the history of mathematics, among other reasons because it confirmed that Gauss had proved, without publishing them, many results that other mathematicians tried to prove until well into the 19th century.</p>
+<p>At the age of fifteen, Gauss was given an initiation course on logarithms which, at the end, included a succinct table of prime numbers. This for Gauss turned out to be suspicious, but after different calculations that he undertook, he found what seemed to be an unusual relationship between logarithms and prime numbers. Arriving to sentence that “you cannot imagine how much poetry there is in a table of logarithms”.</p>
+<p>This anecdote, very famous certainly, was related by Gauss in a letter that he wrote to Johann Franz Encke, a proverbial German astronomer who was Gauss’s close friend with whom he maintained a regular correspondence.</p>
+<blockquote>
+<p>My distinguished friend, Your remarks concerning the frequency of primes were of interest to me in more ways than one. You have reminded me of my own endeavors in this field which began in the very distant past, in 1792 or 1793, after I had acquired the Lambert supplements to the logarithmic tables. Even before I had begun my more detailed investigations into higher arithmetic, one of my first projects was to turn my attention to the decreasing frequency of primes, to which end I counted the primes in several chiliads (thousands) and recorded the results on the attached white pages. I soon recognized that behind all of its fluctuations, this frequency is on the average inversely proportional to the logarithm, so that the number of primes below a given bound n is approximately equal to $$ \int {dn \over \log{n}} $$ where the logarithm is understood to be hyperbolic.</p>
+</blockquote>
+<p>Let’s agree that Gauss with “hyperbolic logarithm” is referring to natural logarithms, to schoolchildren. In his <a href="https://books.googleusercontednagtjpvg-xlplpbd7kgbve31bgoveuywest14natrg3i55uz-ccam_j4kxowr-mfs8njurfyb2ucqpefdvtzrekiqzhpgxa0bevhfsx52gpz5pq6wpyllqbhpfjlygthuoiozvts3hij/">Nachlass</a>—writings recovered from him after his death on February 23, 1855—a table was found in which he listed the number of prime numbers in each chiliads up to one million. To this day, we know for sure that his calculations for the last ten chiliads, <a href="https://www.wolframalpha.com/input/?i=pi%28n*1000%29-pi%28%28n-1%29*1000%29+where+n%3D991...1000">are correct</a> - there are, to be exact, 71 primes between 990,000 and 991,000; 721 primes between 990,000 and 1,000,000 adding up to the ten chiliads on the list. So on average, there are 72.1 primes per chiliad just before 1,000,000. Compare to $ 1/log(995,000)=0.0724 $, predicting about 72.4 primes per chiliad in this range by Gauss’s hypothesis. Regarding this momentous discovery, the American mathematician Jerome Goldstein asserted:</p>
+<blockquote>
+<p>Gauss’ calculations are awesome to contemplate, since they were done long before the days of high-speed computers. Gauss’ persistence is most impressive… In spite of these (remarkably few) errors, Gauss’ calculations still provide overwhelming evidence in favor of the prime number theorem. Modern students of mathematics should take note of the great care with which data was compiled by such giants as Gauss. Conjectures in those days were rarely idle guesses. They were usually supported by piles of laboriously gathered evidence.</p>
+</blockquote>
+<p>$$ \pi\left( x \right)\sim \frac{x }{In\left( x \right)} $$</p>
+<p>$ In\left( x \right) $ is the natural logarithm of $ x $, which can take any value, such as 72 or 128. The symbol $ \sim $ indicates that both functions tend to infinity with the same reason, that is, with the same magnitude. This quaint logarithm will be discussed in greater detail later.</p>
+<p>Gauss died on February 23, 1855 at the age of 77, leaving behind him a body of writings of transversal importance within mathematics. He wrote several tables of prime numbers, showing the distribution of primes in centuries between 1,000,000 and 1,100,000, taking a century as a block of 100 integers from a multiple of 100. Each column counts the centuries in myriad (a block of 10,000 integers starting at a multiple of 10,000), so the column under 0 counts centuries between 1,000,000 and 1,010,000, the column under 1 counts centuries between 1,010,000 and 1,020,000, and so on . The numbers on the left indicate how many centuries in the given myriad contain that many prime numbers. The 1 in the upper left just inside the table indicates that there is a century between 1,000,000 and 1,010,000 that contains exactly one prime number. The two blank spaces below indicate that there are no centuries between 1,000,000 and 1,010,000 that contain two or three prime numbers. The 2 under the two blank spaces indicates that there are two centuries between 1,000,000 and 1,010,000 that contain exactly four prime numbers, and so on.</p>
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+    <figure class="">
+      <img class="" src="/res/nachlass-table.png">
+      <figcaption class="">Main table of prime numbers in <a href="https://books.google.com/books?id=BTun-k0U128C&amp;pg=PA438#v=onepage&amp;q&amp;f=false">Gauss&rsquo;s Nachlass</a></figcaption>
+    </figure>
+  
+
+
+<p>Dentro del caption=&quot;&quot;, ¿cómo puedo introducir un enlace?</p>
+<p>$ \frac{x }{log\left( x \right)} $ is the logarithmic function. Through it, Gauss channeled his attention into estimating the number of primes between 2,900,000 and 3,000,000 — he estimated some 6,705 prime numbers; between 2,900,000 and 2,910,000 he found 680 prime numbers and between 2,910,000 and 2,920,000 he found 663 prime numbers.</p>
+<p>$$ \int_{3,000,000}^{2,900,000} \frac{dx}{log\left( x \right)} = 6712,643163375… $$</p>
+<p>Finally, Gauss wrote $ \pi\left( 2,900,000 \right) - \pi(3,000,000) = 6707 $ in order to compare the number of prime numbers in the interval — the figure he gave is wrong, however, it is not his fault but the prime number tables he used to guide himself. As spectacular and unbelievable as it is, <strong>Gauss’s logarithm was only wrong by 5 prime numbers</strong>, we can support Gauss’s result with the following Python code:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">primesInRange</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">isPrime</span> <span class="o">=</span> <span class="p">[</span><span class="kc">True</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="n">b</span> <span class="o">-</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>                                 <span class="c1"># Partial sieve</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span> <span class="n">isPrime</span><span class="p">[:</span><span class="mi">2</span><span class="o">-</span><span class="n">a</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="kc">False</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="mi">2</span> <span class="o">-</span> <span class="n">a</span><span class="p">)</span>                  <span class="c1"># 0 and 1 are not primes</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="o">*</span><span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">b</span><span class="o">**</span><span class="mf">0.5</span><span class="p">)</span> <span class="o">+</span> <span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">)):</span>                  <span class="c1"># Scan divisors up to √b</span>
+</span></span><span class="line"><span class="cl">        <span class="n">base</span> <span class="o">=</span> <span class="p">(</span><span class="n">p</span> <span class="o">-</span> <span class="n">a</span> <span class="o">%</span> <span class="n">p</span><span class="p">)</span> <span class="o">%</span><span class="n">p</span> <span class="o">+</span> <span class="n">p</span><span class="o">*</span> <span class="p">(</span><span class="n">p</span> <span class="o">&gt;=</span> <span class="n">a</span><span class="p">)</span>                        <span class="c1"># First multiple in partial sieve</span>
+</span></span><span class="line"><span class="cl">        <span class="n">isPrime</span><span class="p">[</span><span class="n">base</span><span class="p">::</span><span class="n">p</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="kc">False</span><span class="p">]</span> <span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="n">isPrime</span><span class="p">[</span><span class="n">base</span><span class="p">::</span><span class="n">p</span><span class="p">])</span>     <span class="c1"># Flag non-primes</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">[</span><span class="n">p</span> <span class="k">for</span> <span class="n">p</span><span class="p">,</span> <span class="n">prime</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">isPrime</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span> <span class="k">if</span> <span class="n">prime</span><span class="p">]</span>  <span class="c1"># Return primes</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">primes</span> <span class="o">=</span> <span class="n">primesInRange</span><span class="p">(</span><span class="mi">2900000</span><span class="p">,</span> <span class="mi">3000000</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="n">primes</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Printing the prime number of the interval</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">primes</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Number of prime numbers: 6707</span></span></span></code></pre></div>
+<h3 id="combinatorial-method-of-ernst-meissel-and-dh-lehmer">Combinatorial method of Ernst Meissel and D.H. Lehmer</h3>
+<p>There is little to say about him. However, Meissel was the first mathematician to build a practical method for calculating values $ \pi\left( x \right) $ for $ x $ effectively. In 1870, he calculated $ \pi(10^8)=5,761,455 $, erring by only 5 prime numbers, then in 1882 he succeeded, obtaining an exact result. We must bear in mind that the calculations had to be done by hand and although the method was much better than Legendre’s, the number of calculations was not negligible.</p>
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+  
+
+  
+    
+      
+      
+    
+
+    <figure class="figure-right">
+      <p>
+        <img class="img-right" src="/res/178px-Meissel_hf.jpg">
+        <figcaption class="caption-right">German mathematician Daniel Friedrich Ernst Meissel (1826-1895)</figcaption>
+      </p>
+    </figure>
+  
+
+
+<p>Meissel also calculated $ \pi(10^9) $ even though the value you got was really $ \pi(10^9)-56 $. On this last but picturesque result, Lehmer commented a few decades later: “Meissel’s calculus of $ \pi(10^9) $, made between 1871 and 1885, must be considered one of the most outstanding calculations of the 19th century, even if the result is slightly wrong&quot;.</p>
+<p>The Meissel-Lehmer method is represented as follows:</p>
+<p>$$ \pi(x)=\phi(x,c)-1+c-P_2(x,c) $$</p>
+<p>Where $ c=\pi(x^{1/3}) $ and $ \phi(x,c) $ denotes the number of numbers $ \le x $ which are not divisible by any of the first $ c $ prime numbers (that is, the number of numbers $ \le x $ whose prime factors are all $ &gt;x^{1/3} $ and $ P_2(x,c) $ denotes the number of products $ pq\le x $ of two cousins greater than $ x^{1/3} $. Then you must calculate $ \phi(x,c) $ and $ P_2(x,c) $.</p>
+<p>The calculation of $ \phi(x,c) $ is done by recurrence:</p>
+<p>$$ \phi(x,c)=\phi(x,c-1)-\phi(x/p_c,c-1) $$</p>
+<p>where $ p_c $ is the $ c $-th prime. This leads to a proliferation of terms that need to be calculated properly so as not to overload memory and execution time too much. The calculation of $ P_2(x,c) $ it is done by means of a screening method. For larger numbers $ x $ it is preferable to use $ a=\pi(x^{1/4}) $ instead of $ c $, which complicates the method.</p>
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+  
+
+  
+    
+      
+      
+    
+
+    <figure class="figure-right">
+      <p>
+        <img class="img-right" src="/res/Lehmer_Derrick.jpeg">
+        <figcaption class="caption-right">American mathematician Derrick Henry Lehmer (1905-1991), known for applying mechanical methods and computation to solving various problems in number theory</figcaption>
+      </p>
+    </figure>
+  
+
+
+<h4 id="lehmer-and-his-method">Lehmer and his method</h4>
+<p>Lehmer was born in Berkeley, California on February 23, 1905. His mother was Clara Eunice Mitchell, and his father was Derrick Norman Lehmer, a professor of mathematics at the University of California who was interested in number theory and mechanical calculus. He had four more siblings, so he grew up in a large family. He attended school at Berkeley, but it was his father who had the greatest influence on him, and even at a very young age he became involved with his father’s ideas in number theory and in particular his interest in building machines that They help with number theory calculations.</p>
+<p>After completing his school education, Dick entered Berkeley to study physics. He was very involved with his father’s ideas, so on one hand, he studied the physics courses, while on the other hand he helped his father with the number theory calculations that he was carrying out. One project his father had worked on during Dick’s time as a student was his work on Factor Templates which was published in 1929. This gave him a method of factoring a number using cards with holes in them and which was later described by Dick Lehmer.</p>
+<p>Lehmer, using one of the first—an IBM-701, still one of those that used vacuum tubes with incandescent filament instead of transistors—was able to calculate $ \pi(10^9)=50,847,534 $ and $ \pi(10^{10})=455,052,511 $. The first corrected the erroneous value of Meissel, the second, in turn, had an error of one unit. With computers also come estimates of the effectiveness of algorithms. For example, Eratosthenes’ sieve is inefficient. It needs space for $ x $ numbers, and if we count the operations that we must perform with these numbers they are of the order of $ x\log\log x $, we say that it takes a time $ O(x\log\log x) $ and a space of $ O\left( x \right) $.</p>
+<p>Meissel-Lehmer’s method is difficult to estimate, since it uses human choices to select certain parameters. In 1984 Miller, Lagarias, and Odlyzko theoretically improved the Meissel-Lehmer method by obtaining a method that calculates $ \pi\left( x \right) $ using $ O(x^{1/3+\varepsilon}) $ of space and $ O(x^{2/3+\varepsilon}) $ of time.</p>
+</div>
+        <footer class="post-footer">
+            <div>Posted on: <time datetime="2022-12-17T00:00:00">2022-12-17</time></div>
+                <div><time datetime="2022-12-17T00:00:00">Last updated: 2022-12-17</time></div>
+                
+                
+                
+                <div class="post-categories">Categories:
+                    <a href="/categories/general">General</a>, 
+                    <a href="/categories/mathematics">Mathematics</a>
+                </div>
+                
+                
+                
+                
+                <div class="post-tags">Tagged on:
+                       <a href="/tags/mathematics">mathematics</a>, 
+                       <a href="/tags/prime-numbers">prime-numbers</a>, 
+                       <a href="/tags/integral-logarithm">integral-logarithm</a>, 
+                       <a href="/tags/combinatorial-analysis">combinatorial-analysis</a>, 
+                       <a href="/tags/riemann">riemann</a>, 
+                       <a href="/tags/meissel">meissel</a>, 
+                       <a href="/tags/gauss">gauss</a>
+                </div>
+                
+        </footer>
+        
+<table cellspacing="15" style="width:100%; border: none;">
+    <tr>
+        <td style="text-align: center; border: none; padding: 0px;">
+        </td>
+        <td style="text-align: center; border: none; padding: 0px;">
+        </td>
+    </tr>
+</table>
+
+        
+    </article>
+    
+    <hr>
+    <div class="next-article">
+        
+        <h4>Next post</h4>
+        <ul>
+            <li><a class="link-reverse" href="https://www.sheikyon.me/the-untold-metaphysics-of-money-and-state/?ref=footer">The Untold Metaphysics of Money and State</a></li>
+        </ul>
+        
+    </div>
+    
+    <div class="previous-article">
+        
+        <h4>Previous post</h4>
+        <ul>
+            <li><a class="link-reverse" href="https://www.sheikyon.me/tiktok-is-much-worse-than-you-think/?ref=footer">TikTok is Much Worse Than You Think</a></li>
+        <ul>
+        
+    </div>
+
+    <section>
+        
+    </section>
+    
+</main>
+
+
+        <div class="sidebar1 widgets columns-1">
+    <aside>
+    
+</aside>
+    <aside class="widget widget_categories">
+        <h2 class="sidebar-titles">Categories</h2>
+        <ul class="widget__list"><li class="cat-item cat-item-2">
+                <a href="https://www.sheikyon.me/categories/computer-science/">Computer science (1)</a>
+            </li><li class="cat-item cat-item-2">
+                <a href="https://www.sheikyon.me/categories/cryptography/">Cryptography (1)</a>
+            </li><li class="cat-item cat-item-2">
+                <a href="https://www.sheikyon.me/categories/economics/">Economics (2)</a>
+            </li><li class="cat-item cat-item-2">
+                <a href="https://www.sheikyon.me/categories/general/">General (5)</a>
+            </li><li class="cat-item cat-item-2">
+                <a href="https://www.sheikyon.me/categories/mathematics/">Mathematics (2)</a>
+            </li><li class="cat-item cat-item-2">
+                <a href="https://www.sheikyon.me/categories/philosophy/">Philosophy (1)</a>
+            </li><li class="cat-item cat-item-2">
+                <a href="https://www.sheikyon.me/categories/technology/">Technology (1)</a>
+            </li>
+        </ul>
+    </aside>
+
+    
+
+    <aside class="widget widget_recent_entries">
+        <h2 class="sidebar-titles">Recent articles</h2>
+        <div class="recent-posts">
+            <p>
+                <a href="/the-orthodox-fetishism-for-econometrics/">The Orthodox Fetishism for Econometrics</a>
+            </p>
+            <p>
+                <a href="/introduction-to-the-technical/historical-development-of-pgp/">Introduction to the Technical/Historical Development of PGP</a>
+            </p>
+            <p>
+                <a href="/the-untold-metaphysics-of-money-and-state/">The Untold Metaphysics of Money and State</a>
+            </p>
+            <p>
+                <a href="/the-genesis-of-the-prime-numbers-theorem/">The Genesis of the Prime Numbers Theorem</a>
+            </p>
+            <p>
+                <a href="/tiktok-is-much-worse-than-you-think/">TikTok is Much Worse Than You Think</a>
+            </p>
+        </div>
+    </aside>
+
+   
+
+</div>
+        </div>
+        </div>
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$','$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  
+    window.addEventListener('load', (event) => {
+        document.querySelectorAll("mjx-container").forEach(function(x){
+          x.parentElement.classList += 'has-jax'})
+      });
+  
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<footer role="contentinfo" class="document-footer contentinfo widgets columns-1">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
+    <aside class="widget widget_text">
+        <div class="row">
+          <div id="col1">
+            <center><img src="/images/sheikyon.png"></center>
+            <p>
+              Copyright © <a href="https://www.sheikyon.me/"><b>Sheikyon</b></a> 2023. For all content here that is reused without crediting it to my name, please know that all articles/posts as well as works seen on this site are licensed under the <a href="https:/ /creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> license.
+            </p>
+            <p>
+              Powered by <a href="https://gohugo.io/">Hugo</a> and hosted for free on <a href="https://pages.github.com/">GitHub Pages</a>. The security certificate is provided by <a href="https://letsencrypt.org/">Let&#39;s Encrypt</a>. The favicon was created with <a href="https://www.favicon-generator.org/">Favicon &amp; App Icon Generator</a>. The font used for almost all texts is <a href="https://fontsgeek.com/fonts/avenir-next-lt-pro-regular">Avenir Next LT Pro Regular</a>, <a href="https://www.1001fonts .com/amatic-sc-font.html">Amatic SC</a> for the site title and <a href="https://fontmeme.com/fonts/ibm-logo-font/">IBM</a> for the logo.
+            </p>
+            <p>
+              <strong>Feedback</strong>: Questions, comments or just need to know me? <a href="/about/#contact-me">Contact me</a>.
+             </p>
+            <p>
+              Subscribe to <i class="fa fa-rss-square" style="color: #c5781a;"></i> <a href="/index.xml">RSS feed</a> to receive my updates in advance.
+            </p>
+            <p class="webrings">
+              <span>
+              <a href="https://hotlinewebring.club/sheikyon/next">←</a> 
+              <a href="https://hotlinewebring.club/">Hotline Webring</a> 
+              <a href="https://hotlinewebring.club/sheikyon/previous">→</a>
+              </span>
+            </p>
+            <p class="webrings">
+              <span>
+              <a href="https://webring.dinhe.net/prev/www.sheikyon.me">←</a>
+              <a href="http://webring.dinhe.net/">Retronaut Webring</a>
+              <a href="https://webring.dinhe.net/next/www.sheikyon.me">→</a>
+              </span>
+            </p>
+            <p class="social-media-icons" style="text-align: center;">
+                <a href="https://twitter.com/Sheikyon" class="icon twitter">
+                  <span><i class="fab fa-twitter"></i></span>
+                </a>
+                <a href="https://github.com/Sheikyon" class="icon github">
+                  <span><i class="fab fa-github"></i></span>
+                </a>
+                <a href="https://gitlab.com/Sheikyon" class="icon gitlab">
+                  <span><i class="fab fa-gitlab"></i></span>
+                </a>
+                <a href="https://www.goodreads.com/user/show/158673688-sheikyon" class="icon goodreads">
+                  <span><i class="fab fa-goodreads"></i></span>
+                </a>
+                <a href="https://t.me/Sheikyon" class="icon telegram">
+                  <span><i class="fab fa-telegram"></i></span>
+                </a>
+                <a href="https://www.reddit.com/user/sheikyon_" class="icon reddit">
+                  <span><i class="fab fa-reddit"></i></span>
+                </a>
+                <a href="https://www.quora.com/profile/Sheikyon-1" class="icon quora">
+                  <span><i class="fab fa-quora"></i></span>
+                </a>
+                <a href="https://news.ycombinator.com/user?id=sheikyon" class="icon hacker-news">
+                  <span><i class="fab fa-hacker-news"></i></span>
+                </a>
+                <a href="https://mastodon.social/@sheikyon" class="icon mastodon">
+                  <span><i class="fab fa-mastodon"></i></span>
+                </a> 
+                <a href="https://keybase.io/sheikyon" class="icon keybase">
+                  <span><i class="fab fa-keybase"></i></span>
+                </a>   
+                <a href="https://stackexchange.com/users/26704238/sheikyon" class="icon stack-exchange">
+                  <span><i class="fab fa-stack-exchange"></i></span>
+                </a> 
+                <a href="https://stackoverflow.com/users/16574613/sheikyon" class="icon stack-overflow">
+                  <span><i class="fab fa-stack-overflow"></i></span>
+                </a> 
+                <a href="https://mathoverflow.net/users/502373/sheikyon" class="icon mathoverflow">
+                  <span><i class="fab ai ai-mathoverflow-square ai-3x" style="font-size: inherit;"></i></span>
+                </a>
+              </p>
+            </div>
+            <div id="col2">
+              <p>This site is completely free of cookies, ads and trackers, whether from Google or any other entity.</p>
+              <p>There will be some small client-side scripts running, however this site works perfectly with JavaScript disabled.</p>
+              <p>This site was last updated on July 15, 2023 at 7:52 PM (UTC+00:00).</p>
+              <blockquote>
+                <p>To understand something means to find in oneself something equivalent to what one is trying to understand.</p>
+                <p>— Alexander Grothendieck</p>
+              </blockquote>      
+            </div>
+        </div>
+    </aside>
+</footer>
+</div>
+
+    </body>
+</html>

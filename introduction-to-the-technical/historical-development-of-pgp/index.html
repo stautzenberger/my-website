@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Hi, I’m Sheikyon! Welcome to sheikyon.me, I’m a full-stack developer (software developer) enthusiastic about computing, programming, electronics and free and open-source software. In addition to everything that is even slightly close to computers, I also have a deep interest in mathematics, economics, philosophy, sociology, history, and anime. If you take a closer look at this space, you’ll realize that these are the main topics that are usually addressed very regularly in my articles/posts on my website.">
+    <meta name="keywords" content="Computer science, mathematics, economics, and philosophy.">
+    <meta name="author" content="Sheikyon">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+    <title>Introduction to the Technical/Historical Development of PGP - Sheikyon </title>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    
+    
+    <link rel="stylesheet" href="/css/site.min.css">
+    
+    <meta property="og:title" content="Introduction to the Technical/Historical Development of PGP" />
+<meta property="og:description" content="A brief introduction to the technical/historical development of PGP over the last few decades, from its creation in 1991 by cryptographer and computer scientist Philip “Phil” R. Zimmermann to the present decade, and how we can use it for our emails or instant messaging — this article will try to serve as an initiation for future articles." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.sheikyon.me/introduction-to-the-technical/historical-development-of-pgp/" /><meta property="article:section" content="articles" />
+<meta property="article:published_time" content="2023-01-03T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-01-03T00:00:00+00:00" />
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Introduction to the Technical/Historical Development of PGP"/>
+<meta name="twitter:description" content="A brief introduction to the technical/historical development of PGP over the last few decades, from its creation in 1991 by cryptographer and computer scientist Philip “Phil” R. Zimmermann to the present decade, and how we can use it for our emails or instant messaging — this article will try to serve as an initiation for future articles."/>
+
+</head>
+
+    <body class="two-column">
+        <a href="#content">Skip to content</a>
+<link rel="alternate" type="application/rss+xml" href="https://www.sheikyon.me//index.xml" title="Sheikyon">
+    <header role="banner" class="banner widgets columns-1">
+        <div class="site-logo">
+        <a href="/" rel="home">
+            <p></p>
+        </a>
+        <h1 class="site">Sheikyon</h1>
+        <nav>
+            
+              
+                
+                <a href="/"><b>Home</b></a>
+              
+                  
+                <a href="/about/"><b>About/Contact</b></a>
+              
+                  
+                <a href="/articles/"><b>Articles</b></a>
+              
+                  
+                <a href="/microblog/"><b>Microblog</b></a>
+              
+            
+          </nav>
+    </header>
+
+    <div class="wrapper">
+
+    <br>
+    <div style="width: 100%; max-height: 100px; text-align: center;">
+       
+</div>
+
+    <div class="breadcrumbs">
+        
+    </div>
+        <div id="content" class="content">
+<main role="main">
+  <article role="article" class="post type-post format-standard hentry">
+      <header class="post-header">
+          <h1 class="post-title">Introduction to the Technical/Historical Development of PGP</h1>
+          <div class="post-details">
+          </div>
+      </header>
+<div class="post-content">
+    <p>A brief introduction to the technical/historical development of PGP over the last few decades, from its creation in 1991 by cryptographer and computer scientist Philip “Phil” R. Zimmermann to the present decade, and how we can use it for our emails or instant messaging — this article will try to serve as an initiation for future articles.</p>
+<hr>
+<blockquote>
+<p>Without privacy, there was no point in being an individual.</p>
+<p>— Jonathan Franzen</p>
+</blockquote>
+<p>Bailey Whitfield “Whit” Diffie, American cryptographer behind the <a href="https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange">Diffie-Hellman</a> symmetric cryptographic protocol, he prophesied that in the information age, information will be the most valuable commodity of all. Indeed, Whitfield was right. What before was something scarcely profitable and infertile, something that could hardly be squeezed in the form of purely financial desires, degenerated into the level of draconian espionage that big technology exerts on us. Unfortunately, only a minority is reluctant to consent to such levels of espionage and, even worse, few alternative platforms are able to replace the predominant ones.</p>
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+  
+
+  
+    
+      
+      
+    
+
+    <figure class="figure-right">
+      <p>
+        <img class="img-right" src="/res/phil-zimmermann.jpg">
+        <figcaption class="caption-right">American computer scientist and cryptographer Philip &ldquo;Phil&rdquo; R. Zimmermann (1954-XXXX)</figcaption>
+      </p>
+    </figure>
+  
+
+
+<p>Philip aka “Phil” R. Zimmermann was born on February 12, 1954. A series of political, social and economic events throughout the Cold War such as the ultimately failed Soviet intervention in Afghanistan in 1978 (Soviet-Afghan War) to establish a communist government in Kabul in that country, the election of Ronald Reagan and the increasing military tension in the cold war led him to be a fierce anti-war political activist in favor of civil rights. On March 15, 1990, Mikhail Gorbachev is elected president of the Soviet Union, which resulted in a reduction in tension between the western and eastern bloc — this relaxed the bad expectations of Zimmermann, who began to focus his attention on the digital revolution that was brewing in those years and the need for cryptographic methods to protect user privacy.</p>
+<p>A few years earlier, Martin Hellman in collaboration with Whitfield Diffie would devise the aforementioned asymmetric public-private key cryptosystem. Such an idea reached the ears of Ronald Rivest, a student member of MIT’s Department of Electrical Engineering and Computer Science (EECS) and MIT’s Computer Science and Artificial Intelligence Laboratory (CSAIL) and whose interests hovered above all in combinatorics, cryptography, and machine learning, and election integrity. Rivest is the architect behind the MD2, MD4, MD5 and MD6 cryptographic functions, widely used today in the commerce and information security sector to safeguard database passwords.</p>
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+  
+
+  
+    
+      
+      
+    
+
+    <figure class="figure-left">
+      <p>
+        <img class="img-left" src="/res/rsa.webp">
+        <figcaption class="caption-left">Ronald Rivest (1947-XXXX), Adi Shamir (1952-XXXX) and Leonard Adleman (1945) at MIT in the 1970s.</figcaption>
+      </p>
+    </figure>
+  
+
+
+<p>Rivest, who by then had become friends with Adi Shamir and Leonard Adleman—two other students in his lab—focused on delineating a one-way function that can only be inverted if the receiver has some special information. In this regard, Simon Singh said that “Rivest and Shamir spent a year coming up with new ideas, and Adleman spent a year tearing them down” and, in fact, it was until one day when the fog that covered their goals began to clear up. One warm night in 1977, the three students would celebrate Passover where they would drink themselves to sleep. Rivest, unable to sleep, flung himself onto a sofa and in a flash of creativity had a revelation that led him to stay up all night trying to sketch it out while he wrote an article while waiting for dawn.</p>
+<p>Rivest titled his article under the label <a href="https://people.csail.mit.edu/rivest/Rsapaper.pdf">A Method for Obtaining Digital Signatures and Public-Key Cryptosystems</a> and he accompanied his own name with that of his partner Shamir and Adleman in the authors section, because if they had not, the creation of the cryptographic method would have been possible. The aforementioned article gave rise to what we know today as RSA (from the initials of the last names Rivest, Shamir and Adleman), a robust asymmetric public and private key cryptographic method that uses the factorization of integers in which the Private messages are represented by numbers, and their operation is based on the known product of two large prime numbers chosen at random.</p>
+<p>On the other hand, Phil Zimmermann earned a bachelor’s degree in computer science from Florida Atlantic University in Boca Raton, Florida in 1978. Zimmermann devoted much of his work as a software engineer to creating data security and cryptographic systems. As well as communication systems and real-time systems. His interest in the political side of cryptography grew from his background in military policy issues when he served as a software engineer for the Nuclear Weapons Freeze Campaign in the 1980s.</p>
+<blockquote>
+<p>Cryptography used to be an obscure science, of little relevance to everyday life. Historically, it always had a special role in military and diplomatic communications. But in the Information Age, cryptography is about political power, and in particular, about the power relationship between a government and its people. It is about the right to privacy, freedom of speech, freedom of political association, freedom of the press, freedom from unreasonable search and seizure, freedom to be left alone.</p>
+<p>— Philip “Phil” R. Zimmermann</p>
+</blockquote>
+<p>Zimmermann insists on the use of cryptography to preserve privacy online while warning about the trascendental differences between communication of yesteryear and digital and how it can be used to facilitate espionage.</p>
+<blockquote>
+<p>In the past, if the government wanted to violate the privacy of ordinary citizens, it had to expend a certain amount of e ort to intercept and steam open and read paper mail, or listen to and possibly transcribe spoken telephone conversations. This is analogous to catching sh with a hook and a line, one sh at a time. Fortunately for freedom and democracy, this kind of labor-intensive monitoring is not practical on a large scale. Today, electronic mail is gradually replacing conventional paper mail, and is soon to be the norm for everyone, not the novelty it is today. Unlike paper mail, e-mail messages are just too easy to intercept and scan for interesting keywords. This can be done easily, routinely, automatically, and undetectably on a grand scale. This is analogous to driftnet shing-making a quantitative and qualitative Orwellian difference to the health of democracy.</p>
+<p>— Philip “Phil” R. Zimmermann</p>
+</blockquote>
+<p>In this regard, Zimmermann’s concern is the burning likelihood of deliberate state takeover of technological infrastructures, either through legislation to expand powers that the state is usually limited to by law (see my article <a href="/posts/from-fiat-money-to-cbdcs-hegemony-and-monetary-systems/">From Fiat Money to Bitcoin and CBDCs: Hegemony and Monetary Systems</a>) for perpetuate a brutal surveillance regime against citizens for totally despotic purposes. From the monitoring of individual financial or banking transactions to the intervention in a telephone call which could be transcribed and filtered without much difficulty. The cryptographer, therefore, has the task of cryptographically rearming privacy, always taking care of the integrity of the user’s face information.</p>
+<blockquote>
+<p>A future government could inherit a technology infrastructure that’s optimized for surveillance, where they can watch the movements of their political opposition, every financial transaction, every communication, every bit of e-mail, every phone call. Everything could be filltered and scanned and automatically recognized by voice recognition technology and transcribed. It’s time for cryptography to step out of the shadows of spies and the military, and step into the sunshine and be embraced by the rest of us.</p>
+<p>— Philip “Phil” R. Zimmermann</p>
+</blockquote>
+<p>RSA became an example of how mathematics could be used to protect the user, except perhaps as an example of protecting the privacy of all users and not just a select group of people. In those years, computing power was in its infancy and only a few computers, generally belonging to military institutions, armies or large companies, were capable of making use of the powerful asymmetric cryptography it offered. Zimmermann did not turn a blind eye to this situation, as he firmly believed that privacy should not be an eccentric enjoyment to which only an oligarchic elite has free access — and this, hand in hand with the growing threat posed by Senate Bill 266 of the USA that would force the manufacturers of secure communications equipment to put back doors in their products pushed him to start a project with which he would seek to make available to everyone a cryptographic method analogous to RSA.</p>
+<p>He called the great work of his life <em><strong>Pretty Good Privacy</strong></em>, better known by the acronym <em><strong>PGP</strong></em> drawing inspiration from Ralph’s Pretty Good Groceries, one of the sponsors of the Prairie Home Companion of well-known humorist Garrison Keillor, who hosted one of Zimmermann’s favorite radio shows. Zimmermann kept working full-time on what would later become the world’s most widely used instant messaging cryptographic method and trying to reduce RSA encryption times. For example, if Paul sends more than 100 messages daily it would be impractical to spend several minutes (or perhaps hours) encrypting each one, so Zimmermann needed to articulate a cryptographic method that only takes at least a few seconds to encrypt/decrypt the messages.</p>
+<p>The solution to the series of difficulties related to the encryption/decryption times came shortly after when Zimmermann, in an exercise of genius, when he figured out that if Paul wants to send an encrypted message to John, the encryption must be done using a symmetric encryption. Therefore, Zimmermann suggested encryption times could be sped up significantly by combining the asymmetric encryption offered by RSA and symmetric encryption such DES, which he knew could be just as secure as an asymmetric double-key cryptographic method.</p>
+<p>In this way, he suggested the use of a symmetric encryption such as IDEA (International Data Encryption Algorithm) and reasoned: If Paul wants to send an encrypted message to John, Paul will need to encrypt it with IDEA without first choosing a key to send to John, Paul overcomes this problem by finding John’s RSA public key and then using it to encrypt the IDEA key. In this order of ideas, Paul ends up sending two things to Benito, first a message encoded with the IDEA symmetric cipher, and second the IDEA key encoded with the RSA asymmetric cipher. On the other side, John uses his RSA private key to decrypt the IDEA key and then uses the IDEA key to decrypt the message.</p>
+<p>Once the technical difficulties related to how to speed up encryption times had been resolved, there would be two more threads to tie up: the first was that PGP being based entirely on a patented product such as RSA, Zimmermann should directly request a license from RSA Security and, finally, the potential danger posed to Zimmermann by Senate Bill 266 of the USA that would force manufacturers of secure communications equipment to put backdoors into their products.</p>
+<blockquote>
+<p>It is the view of Congress that providers of electronic communication services and manufacturers of electronic communication service-related machinery will ensure that communications systems allow the government to obtain the plaintext content of oral, data, or by any other means, when so authorized by law.</p>
+</blockquote>
+<p>Its approval, fortunately, never materialized due to the pressure exerted by organizations defending civil liberties. For Zimmermann, however, it only constituted a deterrent effect, since the possibility that the Senate in the future would try to materialize legislation that prohibited encryption programs was still burning. Finally, after so many moments of detente, in June 1991 Zimmermann asked a colleague of his to expose PGP on a UseNet <em>bulletin board</em>, where it generated a lot of enthusiasm among cryptography enthusiasts and sooner rather than later began to spread out to the remotest parts of the internet.</p>
+<p>Zimmermann recounted how he began to receive countless emails from people from all over the world who praised him for the virtues that his cryptographic method offered compared to conventional emails that could be intervened by governments, cryptanalysts and crackers. From people in Burma who use it in “jungle training camps. They’ve said that it’s helped morale there because before PGP was introduced there, captured documents would lead to the arrest, torture, and execution of entire families” to citizens Russians who feared that a dictatorship would be established in Russia with the bombing of the parliament ordered by Boris Yeltsin.</p>
+<p>But the waters began to turn sour when RSA Security sued Zimmermann for using its patent for PGP, something Zimmermann tried to prevent with a disclaimer since version 1.0, RSA labeled PGP <em>banditware</em> in response to Zimmermann having released PGP as a <em>freeware</em> containing RSA’s proprietary cryptographic encryption. Shortly after, in February 1993, two government agents would visit Zimmermann, where they engaged in an extensive conversation about his infringement of the RSA patent that later led to an accusation of illegally exporting arms abroad.</p>
+<p><img src="/res/Selection_265.png" alt=""></p>
+<p>The United States Customs Service initiated the aforementioned investigation for violating the Arms Export Control Act (AECA) and the International Traffic in Arms Regulations (ITAR), since the United States government classified cryptography software as a ammunition and therefore a weapon subject to arms trafficking export controls. For this reason, Zimmermann was under investigation from September 1993 until January 1996 when he dropped out without filing charges after MIT Press published the PGP source code and, in that same year, he created the company PGP Inc. In August of that year, the PGP documentation for versions 2.x was published in the IETF (Internet Engineering Task Force).</p>
+<p>In 1995, The PGP 3.0 version already includes alternatives to patented cryptosystems. For symmetric encryption CAST5 (a.k.a CAST-128) is incorporated and IDEA is kept. And for asymmetric encryption, the ElGamal and DSA algorithms are introduced, both based on the work of the Egyptian cryptographer Taher ElGamal to shortly after reach an agreement with Viacrypt, a company that has a license for the use of RSA, versions developed by the original PGP team will carry even numbers. Versions developed by Viacrypt will have an odd number. In 1998, OpenPGP documentation, the proposed open standard based on PGP, is published. Available at the IETF (Internet Engineering Task Force), this document will be the germ of the birth of GPG (GNU Privacy Guard) in 1999.</p>
+<h2 id="reasons-to-use-pgp">Reasons to use PGP</h2>
+<p>PGP works as a hybrid cryptography system. Which means that it uses symmetric and asymmetric encryption techniques to ensure the highest possible security. Something that it achieves by taking advantage of the best of each encryption system. For example, symmetric encryption is faster than asymmetric or public key; but asymmetric encryption provides a solution to the problem of securely distributing keys. In addition to this, it guarantees the non-repudiation of data and non-identity theft.</p>
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+    <figure class="">
+      <img class="" src="/res/why-use-pgp.png">
+      <figcaption class=""><a href="https://www.phildev.net/pgp/gpgwhy.html">Why Use PGP?</a> written by Philip (a.k.a. &ldquo;Phil&rdquo;) R. Zimmermann</figcaption>
+    </figure>
+  
+
+
+<p>There are different variations of PGP: OpenPGP, PGP and GPG, but they generally all do the same thing. Here is the quick terminology run-down:</p>
+<ol>
+<li><strong>PGP</strong>: Pretty Good Privacy or better known as PGP, uses a combination of encryption methods such as hashing, data compression, symmetric key cryptography, and public key cryptography to keep data secure. PGP Inc. previously owned the rights to the original PGP encryption software released in 1991. However, between 1997 and 2010, PGP changed ownership several times, until it was finally acquired by Symantec Corporation, who continues to develop the PGP brand, to the present day.</li>
+<li><strong>OpenPGP</strong>: is an open source PGP standard for free, open, and public use. It arose in 1997, when Philip &ldquo;Phil&rdquo; R. Zimmermann submitted a proposal for open source PGP (OpenPGP) standards to the Internet Engineering Task Force (IETF) to allow encryption providers that comply with PGP standards to provide solutions compatible with other OpenPGP compliant software vendors. This strategy created an open and competitive environment for PGP encryption tools to thrive. Many popular solutions have developed their PGP encryption products following the OpenPGP standards. Some of these products include: GoAnywhere OpenPGP Studio and GoAnywhere Managed File Transfer.</li>
+<li><strong>GPG</strong>: GNU Privacy Guard, GnuPG or GPG is an encryption and digital signature tool initially created by the German programmer, cryptographer, mathematician and computer scientist Werner Koch whose main slogan is to establish itself as an open source alternative to PGP and subject to the <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL</a> license. GPG is part of the <a href="https://www.gnu.org">GNU Project</a> and received funding from the German government in 1999. It is commonly included in <a href="https://en.wikipedia.org/wiki/FreeBSD">FreeBSD</a>, <a href="https://en.wikipedia.org/wiki/OpenBSD">OpenBSD</a>, <a href="https://en.wikipedia.org/wiki/NetBSD">NetBSD</a> and <a href="https://en.wikipedia.org/wiki/GNU/Linux">GNU/Linux</a>, although it can also be used on Windows 10/11 on a Windows Subsystem for Linux (WSL) or on MacOS with GPG Suite.</li>
+</ol>
+<p>So, why should we use PGP encryption? If you’re even slightly versed, you’ll already know the answer from everything you’ve read before, otherwise I’ll go on to list three reasons (a, b, c) why you should use PGP encryption in your day-to-day life.</p>
+
+
+<dt><span><strong>(a) Respects the principles of confidentiality, integrity and availability (CIA Triad)</span></strong></dt>
+<dd>
+<p>The CIA triad alludes to three elementary links in data security: confidentiality, integrity and availability. These principles are essential for the creation of any system that aims to be minimally robust and insurmountable so that it is not open to potential attackers capable of questioning the security of the system itself and its compliance with the three principles mentioned above.</p>
+<p><span><strong>OpenPGP</strong></span> (name by which we'll refer to PGP from now on), adheres to the three links contemplated by the CIA triad. I'll propose to enumerate the three principles and below them will be the reasons why you comply with them.</p>
+<ul>
+<li><strong>Confidentiality:</strong> ensuring the confidentiality of information, such that only the rightful parties can examine view information.
+<ul>
+<li>PGP ensures <em>confidentiality for messages</em>, using encryption.</li>
+<li>PGP ensures <em>confidentiality for files</em>, using encryption.</li>
+</ul>
+</li>
+<li><strong>Integrity:</strong> ensuring the legitimacy and completeness of a message, such that the information can be validated as legitimate.
+<ul>
+<li>PGP ensures <em>integrity for messages</em>, using message signing.</li>
+<li>PGP ensures <em>integrity for files and software packages</em>, also using signatures.</li>
+</ul>
+</li>
+<li><strong>Availability:</strong> ensuring the accessibility of information, such that information is readily available to the appropriate parties.
+<ul>
+<li>PGP ensures <em>availability</em> <em>by providing a globally-sharable public key.</em></li>
+<li>PGP ensures <em>availability with short-and-long key IDs.</em></li>
+<li>PGP ensures <em>availability</em> <em>of key information</em> for verification purposes through <a href="https://www.rossde.com/PGP/pgp_keyserv.html" target="_blank">public key servers.</a></li>
+</ul>
+</li>
+</ul>
+</dd>
+
+<dd>
+<p>Regarding <strong>availability</strong>, however, we can find a bulwark of disadvantages that could make it difficult to use PGP on a day-to-day basis:</p>
+<ul>
+<li><strong>PGP is slow</strong>; manually encrypting and decrypting messages with a client is slow.</li>
+<li><strong>PGP is awkward</strong>; the fact of the matter is that PGP is awkward and clunky to use.</li>
+<li>Due to PGP <em>availability</em> being awkward and slow, many people choose to not use PGP.</li>
+<li>Despite being awkward and slow, PGP is still a universally-accepted standard for email encryption, and there aren't really any notable encryption protocols (that I know of.)</li>
+</ul>
+</dd>
+
+<dt><span><strong>(b) Strong and nearly unbreakable encryption</span></strong></dt>
+<dd>
+
+<p>Each PGP user has a key pair: their own private and public key. To encrypt a message, you'll need the recipient's public key and your own private key. To decrypt a message, you'll need the sender's encrypted message and your own private key to decrypt it. The private key is used to decrypt all PGP-encrypted messages intended for you; this belongs to you and no one else, so never share it. The public key is what you can safely give to others; this is what senders need to encrypt their message.</p>
+
+<ol type="I">
+<li>The more we encrypt our messages and files, the more confidential they will be.</li>
+<li>By signing a message or file, we increase our level of integrity.</li>
+<li>Through a good OPSEC practice, we can avoid the interception of our messages and emails.</li>
+</ol>
+
+<p>It should be noted that inappropriate use of PGP could lead to a series of risks/dangers that could make it a vector for attacks that can lead to the deliberate loss or theft of information. For this reason, it'll be necessary to make a good operational security practice if we want to be free of the aforementioned risks.</p>
+
+<h4>(1) Misuses or lack of encryption by the sender or recipient</h4>
+
+<p>There will always be the possibility that someone will send/reply to you an email without even encrypting it. Either because it's easier, simpler, and more convenient than going to you personally for your PGP public key, or because the sender of the email doesn't use OpenPGP and doesn't intend to. This can give rise to subtle changes in the communication between the sender and the recipient, giving rise to serious decryption or verification errors between both poles.</p>
+
+<h4>(2) Government raids and PGP</h4>
+
+<p>PGP encrypted public keys start with <code>-----BEGIN PGP PUBLIC KEY BLOCK-----</code> and end with <code>-----END PGP PUBLIC KEY BLOCK-----</code> indicating very clearly the program with which the key was encrypted. Given the foregoing, the principle of <span><strong>confidentiality</span></strong> will be in doubt, since in the event of any data violation of privacy by a governmental or institutional entity, it will be known what is the software that was used for the encryption of some conversation or e-mail. Hence, in the same way, a manufacturer can perform a <a href="https://en.wikipedia.org/wiki/Deep_packet_inspection">Deep Packet Inspection</a> on the packet flow of a connection, even when it is outside of SMTP.</p>
+
+<h4>(3) Potential risk of being a victim of a MITM attack directed at a database</h4>
+
+<p>OpenPGP is generally prone to hosting your fingerprints as key identifiers which it will refer to from a database that will be organized by key identifier length. This could lead to spoofing by generating a PGP key with a matching short key identifier or long key identifier.
+
+<p>Such a vulnerability would open the door for users to be tricked into accepting a fake replacement key from a key server or otherwise confusing their key management into corrupting a previously secure communication path and allowing it to be compromised. result in a breach of *confidentiality*. This would require intercepting the key server's lookup which, as you may already know, is not natively encrypted and is always open to returning false recipient data. MITM can also illegitimately intercept inbound and outbound SMTP traffic to re-encrypt the mail conversation on the fly to the actual key the recipient expects and vice versa. Indeed, this can be automated to undermine the PGP infrastructure on a large scale, but it would not go unnoticed whereas a targeted attack would most likely.</p>
+
+<p>You can make the attack a bit more difficult by using encrypted keyserver lookups, but <a href="http://tools.ietf.org/html/draft-shaw-openpgp-hkp-00">since keyservers do not use PGP to authenticate</a>, they are still vulnerable to being subject to a MITM attack at the TLS certification level. (X.509). And, of course, there is also the possibility that the key server itself could be used in an operation directed against you. In practice, the only currently secure way to communicate a key on a business card is to print its full fingerprint along with the search ID, and not forget to verify it (it happened to me, so I bet it happens to you). Fortunately, this vulnerability has already been successfully addressed in <a href="https://www.gnupg.org/faq/whats-new-in-2.1.html#longkid">GnuPFG 2.1</a>.</p>
+
+<h4>(4) RSA can be compromised at any time</h4>
+
+<p>In 1995, MIT mathematician Peter Shor Williston published <a href="http://arxiv.org/abs/quant-ph/9508027">Polynomial-Time Algorithms for Prime Factorization and Discrete Logarithms on a Quantum Computer</a>, an academic paper in which he sought to show how, in his words, a given integer could be factored into prime factors in polynomial time in classical computers, thus allowing us to factor an integer in O(LogN * 3) time and O(logN) space. His first entry onto the computing scene came in 2001 when a group of IBM scientists decomposed 15 into factors of 3 and 5, using a 7-qubit quantum computer.<p>
+
+<p>Just a few months before this article was published, a <a href="https://arxiv.org/pdf/2212.12372.pdf">group of Chinese academics</a> aroused deep interest among the cryptography and computer community when they announced that they could break RSA 2048-bit encryption. "Shor's algorithm has seriously challenged information security based on public key cryptosystems" they said, alluding to how Shor's quantum algorithm could be used to attack the asymmetric encryption offered by RSA by rapidly decomposing any integer into prime factors using quantum computing. The German mathematician and cryptographer Claus-Peter Schnorr did not hesitate to state, referring to the research undertaken by renowned Chinese academics, that "this destroys the RSA cryptosystem".</p>
+
+<p>Recently, for example, cryptographer Dan Shumow—specialized in quantum computing—<a href="https://eprint.iacr.org/2020/1059.pdf">discovered a factorization problem</a> in the RSA cryptographic system and, years before, Swiss cryptographer Daniel Bleichenbacher <a href="https://archiv.infsec.ethz.ch/education/fs08/secsem/bleichenbacher98.pdf">demonstrated the existence of an open vulnerability in the RSA implementation PKCS #1</a>. The foregoing, together with the articulation of new investigations related to how RSA asymmetric encryption could be easily violated and the constant evolution that quantum computing is going through, could lead to the achievement of the potential breaking of all current encryption including, of course, to RSA and PGP.</p>
+
+<h4>(5) DNS and X.509 demand a lot of resources</h4>
+
+<p>DNS/X.509 gobbles up much more computational resources, so more expensive servers and network equipment may be required at scale, making it uneconomical or even impossible to maintain and host an email server that provides services for Jabber/XMPP. Hand in hand with the fact that the TLS and HTTPS standards can be subject to attacks that can easily violate servers. However, this is partly being solved thanks to the achievement of technologies such as <a href="https://en.wikipedia.org/wiki/Distributed_hash_table">Distributed Hash Table</a> (DHT for its acronym).</p>
+
+<h4>(6) The draft problem</h4>
+
+<p><a href="https://en.wikipedia.org/wiki/Enigmail">Enigmail</a>—which is the extension that encrypts the emails you compose from Mozilla Thunderbird—has the absurd habit of saving a server-side draft as long as you have IMAP enabled. This undermines any effort on the part of PGP to keep our emails fully encrypted since the draft of the unsent email will be saved, despite who it may, on the server and what is worse: unencrypted.</p>
+
+<h4>(7) Impractical and cumbersome for group messaging</h4>
+
+<p>As PGP is an asymmetric and hybrid cryptographic method, its versatility is only limited to individual communication (one-to-one) but not to group communication due to its slowness, costs on the server side, and how impractical it is for the common user.</p>
+
+<h4>(8) Lack of uniformity in the content of encrypted messages</h4>
+
+<p>Through remote communication with computers via SSH and especially chats, the size of the messages could be known based on the encrypted length and, in some cases, know fragments of the content of those messages. This problem, which is not really PGP but SSH and OTR network cryptographic protocol, could be alleviated if it weren't for the fact that PGP doesn't fill in the missing content to give a false image of uniformity about all messages sent.</p>
+
+<h4>(9) External HTTP requests</h4>
+
+<p>The programmer and computer scientist, Mike Perry, <a href="https://lists.torproject.org/pipermail/tor-talk/2013-September/030235.html">shared in a document</a> what in his opinion are three fundamental problems of PGP WoT and, to this, he added about four examples of the reasons that he presented in order to provide evidence in favor of his observations. I'll summarize it like this:</p>
+
+<ol type="I">
+<li><span><strong>Dangers of data leakage and user information</span></strong>: "This includes social graph metadata, time and place of interaction, and in some cases, government/slave name identity. This topic has been discussed at length, of course."</li>
+<li><span><strong>Susceptible to severe vulnerabilities</span></strong>: Prone to being a victim of MITM attacks or violations of HTTPS certificates that can lead to information leaks.</li>
+<li><span><strong>The nonsense of hosting the keys on a server</span></strong>: "The amount of storage to maintain the Web of Trust for the whole world would be immense. For the level of authentication it provides, it just doesn't make sense to have this much storage involved."</li>
+</ol>
+
+<p>Perry offered the following examples:</p>
+
+<ol type="I">
+<li>"Every time GPG downloads a new key, re-download it several times via multiple Tor circuits to ensure you always get the same
+key."</li>
+<li>"Every time I verify a signature from a key sent to an email address that is not mine (like a mailinglist), my mail client adds a tiny amount of trust to that key (since each new public email+signature downloaded represents an observation of the key via a potentially distinct network path that should also be observed by multiple people, including the sender)."</li>
+<li>"Every time I am about to encrypt mail to a key, check the key servers for that email address, download the key, and make sure it is still the same (SSH/TOFU-style)."</li>
+<li>"When downloading a key, GPG could verify that the same email to key mapping exists on multiple key servers, with each key server authenticated by an independent TLS key that is stored in the GPG source code or packaging itself. (Perspectives/notary-style cryptographic multipath authentication)."</li>
+</ol>
+
+</dd>
+
+<dl>
+<dt><span><strong>(c) We support a large community of privacy enthusiasts who are trying to protect themselves from surveillance</span></strong></dt>
+<dd>
+
+<p>With these paradigms in mind, it would be convenient to say that through prudent use of PGP we can reduce/lighten the high risks that using it could entail for a novice user. PGP will be secure to the extent that you guarantee its security. This will make it more difficult for malicious individuals to intercept your PGP-encrypted email or instant messaging communications, and thus prevent the deliberate leakage of information or personal data that shouldn't leave certain places. PGP is used to create a digital signature for the message by hashing the plain text and producing a digital signature using the sender's private key. A person can add her signature to another person's public key to prove that he really is the rightful owner.</p>
+<p>However, we will also contribute to the growth of a community in full swing, which is continually joined by more individuals concerned about the unreliability offered by other means of instant messaging that tend to be less proprietary and less committed to protecting the privacy of their users. I'll aim to point out some email services that support the encryption offered by PGP.</p>
+
+<h4><span><strong>Email services with API support</span></strong></h4>
+
+<ol type="I">
+<li><span><strong><a href="https://mailbox.org/">mailbox.org</a></span></strong></li>
+<li><span><strong><a href="https://mail.riseup.net/">RiseUp</a></span></strong></li>
+<li><span><strong><a href="https://roundcube.net/">Roundcube</a></span></strong></li>
+</ol>
+
+<h4><span><strong>Webmail Provider with In-Browser Cryptography</span></strong></h4>
+
+<ol type="I">
+<li><span><strong><a href="https://postale.io/">Postale.io</a></span></strong></li>
+<li><span><strong><a href="https://www.mailfence.com">Mailfence</a></span></strong></li>
+<li><span><strong><a href="https://protonmail.com/">ProtonMail</a></span></strong></li>
+<li><span><strong><a href="https://www.hushmail.com/">Hushmail</a></span></strong></li>
+</ol>
+
+</dd>
+
+
+
+<h2 id="my-latest-conclusions">My latest conclusions</h2>
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+    <figure class="">
+      <img class="" src="/res/817364.jpg">
+      <figcaption class="">The motto &ldquo;Big Brother is watching you&rdquo; from George Orwell&rsquo;s <a href="https://rauterberg.employee.id.tue.nl/lecturenotes/DDM110%20CAS/Orwell-1949%201984.pdf">1984</a> novel.</figcaption>
+    </figure>
+  
+
+
+<p>The evolution of quantum computers will inevitably lead to the breakdown of all modern cryptographic systems and will force mathematicians/scientists around the world to undertake a careful task of rebuilding the foundations of the area responsible for protecting user privacy through encryption: cryptography. The more years go by, the closer we come to leaving current cryptography in a precarious state. Despite the aforementioned problems that PGP presents as encryption, it will still continue to be one of the only ways we have to keep our communications “secure” and free from any type of supervision or monitoring by a company or a government entity.</p>
+<p>Surveillance capitalism has nothing to envy to an extinct or current bureaucratic-totalitarian state. At his disposal are all the essential tools and utensils to vehemently perpetuate a draconian surveillance regime in the more Soviet or, more recently, Chinese style. Surveillance capitalism runs counter to that of the original digital dream; strips the network format of all presumed (and illusory) intrinsic moral clothing and denies that being &ldquo;connected&rdquo; is something inherently prosocial or inclusive by nature, or automatically tends to the socialization of knowledge. The digital connection is today a means to satisfy the chrematistic/financial desires of large companies and the strategic/political desires of governments and disastrous public institutions.</p>
+<h2 id="references">References</h2>
+<ol>
+<li>Wikipedia.org: <em><strong><a href="https://en.wikipedia.org/wiki/Phil_Zimmermann">Phil Zimmermann</a></strong></em></li>
+<li>Singh, S. L. (1999). <em><strong><a href="https://ia902803.us.archive.org/15/items/1.simonsinghthecodebookthescienceofsecrecyfromancientegypttoquantumcryptography2000anchorbooks/1.Simon%20Singh%20-%20The%20code%20book_%20the%20science%20of%20secrecy%20from%20ancient%20Egypt%20to%20quantum%20cryptography%20%282000%2C%20Anchor%20Books%29.pdf">The Code Book: The Science of Secrecy from Ancient Egypt to Quantum Cryptography</a></strong></em>. (1st ed), pg. 322-xxx. Anchor Books.</li>
+<li>R.L. Rivest, A. Shamir, L. Adleman. (1977). <em><strong><a href="https://people.csail.mit.edu/rivest/Rsapaper.pdf">A Method for Obtaining Digital Signatures and Public-Key Cryptosystems</a></strong></em>. Laboratory for Computer Science, Massachusetts Institute of Technology, Cambridge, MA 02139, pg. 1-3.</li>
+<li>Sara Robinson, <em><strong><a href="https://www.ccs.neu.edu/home/fell/DS_Videos/RSA/rsa-article.pdf">Still Guarding Secrets after Years of Attacks</a></strong></em>, RSA Earns Accolades for its Founders (SIAM News, Volume 36, Number 5, June 2003), pg. 1-2.</li>
+<li>Brilliant.org: Retrieved 17:46, January 23, 2023, from <em><strong><a href="https://brilliant.org/wiki/rsa-encryption">RSA Encryption</a></strong></em></li>
+<li>Zimmermann, P. R. (1991, June). <em><strong><a href="https://www.philzimmermann.com/EN/essays/WhyIWrotePGP.html">Why I Wrote PGP</a></strong></em>. Phil Zimmermann. Boulder, Colorado.</li>
+<li>High Tech Today: <em><strong><a href="http://www.animatedsoftware.com/hightech/philspgp.htm">Interview with author of PGP (Pretty Good Privacy)</a></strong></em> by Russell D. Hoffman</li>
+<li>Phil’s GPG Docs: <em><strong><a href="https://www.phildev.net/pgp/gpgwhy.html">Why Use PGP?</a></strong></em> by Philip (a.k.a. “Phil”) R. Zimmermann</li>
+<li>Wikipedia.org: <em><strong><a href="https://en.wikipedia.org/wiki/Deep_packet_inspection">Deep Packet Inspection</a></strong></em></li>
+<li>Shor, P. W. (1995, August 30). <em><strong><a href="https://arxiv.org/pdf/quant-ph/9508027">Polynomial-Time Algorithms for Prime Factorization and Discrete Logarithms on a Quantum Computer</a></strong></em>. SIAM J. Comput, 26, 1484-1509.</li>
+<li>Shumow, D. (2020). <em><strong><a href="https://eprint.iacr.org/2020/1059.pdf">Incorrectly Generated RSA Keys: How To Recover Lost Plaintexts</a></strong></em>. Microsoft Research, Redmond WA 98052, USA. IACR Cryptol. ePrint Arch., 2020, 1059.</li>
+<li>Bleichenbacher, D. (1998, August 23). <em><strong><a href="https://archiv.infsec.ethz.ch/education/fs08/secsem/bleichenbacher98.pdf">Chosen Ciphertext Attacks Against Protocols Based on the RSA Encryption Standard PKCS #1</a></strong></em>. 700 Mountain Ave, Murray Hill, NJ 07974. Annual International Cryptology Conference.</li>
+<li>Schnorr, C. (2021, June 16). <em><strong><a href="https://eprint.iacr.org/2021/933.pdf">Factoring Integers by CVP Algorithms</a></strong></em>. pg. 1-2. Fachbereich Informatik und Mathematik, Goethe-Universit¨at Frankfurt, PSF 111932, D-60054 Frankfurt am Main, Germany. Number Theory and Cryptography.</li>
+</ol>
+</div>
+        <footer class="post-footer">
+            <div>Posted on: <time datetime="2023-01-03T00:00:00">2023-01-03</time></div>
+                <div><time datetime="2023-01-03T00:00:00">Last updated: 2023-01-03</time></div>
+                
+                
+                
+                <div class="post-categories">Categories:
+                    <a href="/categories/general">General</a>, 
+                    <a href="/categories/computer-science">Computer science</a>, 
+                    <a href="/categories/cryptography">Cryptography</a>
+                </div>
+                
+                
+                
+                
+                <div class="post-tags">Tagged on:
+                       <a href="/tags/pgp">pgp</a>, 
+                       <a href="/tags/openpgp">openpgp</a>, 
+                       <a href="/tags/algorithm">algorithm</a>, 
+                       <a href="/tags/privacy">privacy</a>, 
+                       <a href="/tags/cryptography">cryptography</a>
+                </div>
+                
+        </footer>
+        
+<table cellspacing="15" style="width:100%; border: none;">
+    <tr>
+        <td style="text-align: center; border: none; padding: 0px;">
+        </td>
+        <td style="text-align: center; border: none; padding: 0px;">
+        </td>
+    </tr>
+</table>
+
+        
+    </article>
+    
+    <hr>
+    <div class="next-article">
+        
+        <h4>Next post</h4>
+        <ul>
+            <li><a class="link-reverse" href="https://www.sheikyon.me/microblog/the-programmer-as-a-linguist/?ref=footer">The Programmer as an Applied Linguist</a></li>
+        </ul>
+        
+    </div>
+    
+    <div class="previous-article">
+        
+        <h4>Previous post</h4>
+        <ul>
+            <li><a class="link-reverse" href="https://www.sheikyon.me/the-untold-metaphysics-of-money-and-state/?ref=footer">The Untold Metaphysics of Money and State</a></li>
+        <ul>
+        
+    </div>
+
+    <section>
+        
+    </section>
+    
+</main>
+
+
+        <div class="sidebar1 widgets columns-1">
+    <aside>
+    
+</aside>
+    <aside class="widget widget_categories">
+        <h2 class="sidebar-titles">Categories</h2>
+        <ul class="widget__list"><li class="cat-item cat-item-2">
+                <a href="https://www.sheikyon.me/categories/computer-science/">Computer science (1)</a>
+            </li><li class="cat-item cat-item-2">
+                <a href="https://www.sheikyon.me/categories/cryptography/">Cryptography (1)</a>
+            </li><li class="cat-item cat-item-2">
+                <a href="https://www.sheikyon.me/categories/economics/">Economics (2)</a>
+            </li><li class="cat-item cat-item-2">
+                <a href="https://www.sheikyon.me/categories/general/">General (5)</a>
+            </li><li class="cat-item cat-item-2">
+                <a href="https://www.sheikyon.me/categories/mathematics/">Mathematics (2)</a>
+            </li><li class="cat-item cat-item-2">
+                <a href="https://www.sheikyon.me/categories/philosophy/">Philosophy (1)</a>
+            </li><li class="cat-item cat-item-2">
+                <a href="https://www.sheikyon.me/categories/technology/">Technology (1)</a>
+            </li>
+        </ul>
+    </aside>
+
+    
+
+    <aside class="widget widget_recent_entries">
+        <h2 class="sidebar-titles">Recent articles</h2>
+        <div class="recent-posts">
+            <p>
+                <a href="/the-orthodox-fetishism-for-econometrics/">The Orthodox Fetishism for Econometrics</a>
+            </p>
+            <p>
+                <a href="/introduction-to-the-technical/historical-development-of-pgp/">Introduction to the Technical/Historical Development of PGP</a>
+            </p>
+            <p>
+                <a href="/the-untold-metaphysics-of-money-and-state/">The Untold Metaphysics of Money and State</a>
+            </p>
+            <p>
+                <a href="/the-genesis-of-the-prime-numbers-theorem/">The Genesis of the Prime Numbers Theorem</a>
+            </p>
+            <p>
+                <a href="/tiktok-is-much-worse-than-you-think/">TikTok is Much Worse Than You Think</a>
+            </p>
+        </div>
+    </aside>
+
+   
+
+</div>
+        </div>
+        </div>
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$','$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  
+    window.addEventListener('load', (event) => {
+        document.querySelectorAll("mjx-container").forEach(function(x){
+          x.parentElement.classList += 'has-jax'})
+      });
+  
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<footer role="contentinfo" class="document-footer contentinfo widgets columns-1">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
+    <aside class="widget widget_text">
+        <div class="row">
+          <div id="col1">
+            <center><img src="/images/sheikyon.png"></center>
+            <p>
+              Copyright © <a href="https://www.sheikyon.me/"><b>Sheikyon</b></a> 2023. For all content here that is reused without crediting it to my name, please know that all articles/posts as well as works seen on this site are licensed under the <a href="https:/ /creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> license.
+            </p>
+            <p>
+              Powered by <a href="https://gohugo.io/">Hugo</a> and hosted for free on <a href="https://pages.github.com/">GitHub Pages</a>. The security certificate is provided by <a href="https://letsencrypt.org/">Let&#39;s Encrypt</a>. The favicon was created with <a href="https://www.favicon-generator.org/">Favicon &amp; App Icon Generator</a>. The font used for almost all texts is <a href="https://fontsgeek.com/fonts/avenir-next-lt-pro-regular">Avenir Next LT Pro Regular</a>, <a href="https://www.1001fonts .com/amatic-sc-font.html">Amatic SC</a> for the site title and <a href="https://fontmeme.com/fonts/ibm-logo-font/">IBM</a> for the logo.
+            </p>
+            <p>
+              <strong>Feedback</strong>: Questions, comments or just need to know me? <a href="/about/#contact-me">Contact me</a>.
+             </p>
+            <p>
+              Subscribe to <i class="fa fa-rss-square" style="color: #c5781a;"></i> <a href="/index.xml">RSS feed</a> to receive my updates in advance.
+            </p>
+            <p class="webrings">
+              <span>
+              <a href="https://hotlinewebring.club/sheikyon/next">←</a> 
+              <a href="https://hotlinewebring.club/">Hotline Webring</a> 
+              <a href="https://hotlinewebring.club/sheikyon/previous">→</a>
+              </span>
+            </p>
+            <p class="webrings">
+              <span>
+              <a href="https://webring.dinhe.net/prev/www.sheikyon.me">←</a>
+              <a href="http://webring.dinhe.net/">Retronaut Webring</a>
+              <a href="https://webring.dinhe.net/next/www.sheikyon.me">→</a>
+              </span>
+            </p>
+            <p class="social-media-icons" style="text-align: center;">
+                <a href="https://twitter.com/Sheikyon" class="icon twitter">
+                  <span><i class="fab fa-twitter"></i></span>
+                </a>
+                <a href="https://github.com/Sheikyon" class="icon github">
+                  <span><i class="fab fa-github"></i></span>
+                </a>
+                <a href="https://gitlab.com/Sheikyon" class="icon gitlab">
+                  <span><i class="fab fa-gitlab"></i></span>
+                </a>
+                <a href="https://www.goodreads.com/user/show/158673688-sheikyon" class="icon goodreads">
+                  <span><i class="fab fa-goodreads"></i></span>
+                </a>
+                <a href="https://t.me/Sheikyon" class="icon telegram">
+                  <span><i class="fab fa-telegram"></i></span>
+                </a>
+                <a href="https://www.reddit.com/user/sheikyon_" class="icon reddit">
+                  <span><i class="fab fa-reddit"></i></span>
+                </a>
+                <a href="https://www.quora.com/profile/Sheikyon-1" class="icon quora">
+                  <span><i class="fab fa-quora"></i></span>
+                </a>
+                <a href="https://news.ycombinator.com/user?id=sheikyon" class="icon hacker-news">
+                  <span><i class="fab fa-hacker-news"></i></span>
+                </a>
+                <a href="https://mastodon.social/@sheikyon" class="icon mastodon">
+                  <span><i class="fab fa-mastodon"></i></span>
+                </a> 
+                <a href="https://keybase.io/sheikyon" class="icon keybase">
+                  <span><i class="fab fa-keybase"></i></span>
+                </a>   
+                <a href="https://stackexchange.com/users/26704238/sheikyon" class="icon stack-exchange">
+                  <span><i class="fab fa-stack-exchange"></i></span>
+                </a> 
+                <a href="https://stackoverflow.com/users/16574613/sheikyon" class="icon stack-overflow">
+                  <span><i class="fab fa-stack-overflow"></i></span>
+                </a> 
+                <a href="https://mathoverflow.net/users/502373/sheikyon" class="icon mathoverflow">
+                  <span><i class="fab ai ai-mathoverflow-square ai-3x" style="font-size: inherit;"></i></span>
+                </a>
+              </p>
+            </div>
+            <div id="col2">
+              <p>This site is completely free of cookies, ads and trackers, whether from Google or any other entity.</p>
+              <p>There will be some small client-side scripts running, however this site works perfectly with JavaScript disabled.</p>
+              <p>This site was last updated on July 15, 2023 at 7:52 PM (UTC+00:00).</p>
+              <blockquote>
+                <p>To understand something means to find in oneself something equivalent to what one is trying to understand.</p>
+                <p>— Alexander Grothendieck</p>
+              </blockquote>      
+            </div>
+        </div>
+    </aside>
+</footer>
+</div>
+
+    </body>
+</html>
